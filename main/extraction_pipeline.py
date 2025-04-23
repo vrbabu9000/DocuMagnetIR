@@ -303,7 +303,7 @@ async def download_conversion_formats(pdf_id, output_dir, file_name):
 
 async def main():
     # Replace with your PDF file path
-    pdf_path = r"D:\MSE_DS_JHU\Semester1\Information_Retrieval_Web_Agents\Git\DocuMagnetIR\data\sample_papers\final_exam.pdf"
+    pdf_path = r"DocuMagnetIR/data/sample_papers/midterm-old.pdf"
     
     success = await process_pdf(pdf_path)
     if success:
