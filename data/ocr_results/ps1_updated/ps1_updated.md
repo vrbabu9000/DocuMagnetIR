@@ -5,6 +5,7 @@ Due: Tuesday, April 30, $2019$ at 16:00 PDT
 ## 1. General Instructions
 
 Note: Problem 3d has been updated as of Friday, April $26$ at $5$ pm PT. The previous version of the question read "...For the given postings list, what is the upper limit on how much processing time (in $\mu$ s per list element) variable byte encoding can take, in order to be faster than (or equally fast as) gamma encoding?" The current version reads "For the given postings list, what is the upper limit on how much processing time the decoding of variable byte encoding can take (in $\mu$ s per list element), in order to be faster than (or equally fast as) gamma encoding on an overall basis (transfer + decoding)?"
+
 This problem set has $5$ problems. For some questions, you only need to write your answer as a number or a few characters; but you need to write a brief justification for your answer if the question requests you to do so. Please make sure that your answer is clear and succinct; we may not give full credits to answers that are overly long. After you finish this problem set, upload the PDF file with your answers to GradeScope.
 
 It is your responsibility to ensure that you finish this problem set individually. You can have general knowledge-level discussions with other students, but sharing answers is not allowed under the Honor Code. If you have questions or need clarifications, please post on Piazza or come to office hours.
@@ -14,7 +15,10 @@ It is your responsibility to ensure that you finish this problem set individuall
 Consider the following documents:
 Doc 1: I am a student, and I currently take CS276. I was a student in CS224N last quarter.
 Doc 2: I was a student. I have taken CS276.
-a. We have seen that positional indexes are very useful to run queries and search against documents. Let's build positional indexes on top of these documents using the format $\mathrm{DocID}_{\mathrm{a}}$ : $<$ Position $_{\mathrm{abc}}$, Position $_{\mathrm{xyz}}>$; DocID $_{\mathrm{b}}$ : $<$ Position $_{\text {def }}$, Position $_{\text {ghi }}>; \ldots$
+a. We have seen that positional indexes are very useful to run queries and search against documents.
+
+Let's build positional indexes on top of these documents using the format $\mathrm{DocID}_{\mathrm{a}}$ : $<$ Position $_{\mathrm{abc}}$,
+Position $_{\mathrm{xyz}}>$; DocID $_{\mathrm{b}}$ : $<$ Position $_{\text {def }}$, Position $_{\text {ghi }}>; \ldots$
 The position of the first word in the document is $1$, by convention.
 For example, the positional index for the word "am" is as follows:
 am: $1:<2>$
@@ -52,7 +56,6 @@ i. Fixed width entries of $20$ bytes
 ii. Blocked storage with front coding and a block size of $3$ (i.e., Problem $2$ (a) (i) above)
 
 By what proportion do we reduce storage by using blocked storage with front coding and a block size of $3$ ?
-
 Assume that:
 
 - The dictionary stores the term, the document frequency, and a pointer to the postings list
@@ -98,14 +101,14 @@ A: to be not to be not
 B: it was not to be
 a. Write down the term frequency of each term in each document.
 b. Write down the number of occurrences of each word bigram in each document (ignoring the begin-of-document and end-of-document tokens).
-c. Consider a vector space where each dimension is a word bigram. For each document, write down the vector of normalized bigram term frequencies (without log scaling) using the format \{bigram: value, bigram: value, ... \}. Use Euclidean normalization.
+c. Consider a vector space where each dimension is a word bigram. For each document, write down the vector of normalized bigram term frequencies (without log scaling) using the format \{bigram: value, bigram: value, ...\}. Use Euclidean normalization.
 d. Now consider the tf-idf weighting:
 
 $$
 w_{t, d}=\mathrm{tf}_{t, d} \times \log _{10}\left(N / \mathrm{df}_{t}\right)
 $$
 
-For each document, write down the vector of normalized tf -idf weights where each dimension is a word bigram. Perform Euclidean normalization after calculating the tf-idf weight vector $w_{t, d}$. As in c, use the format \{bigram: value, bigram: value, ...\}. Assume that the corpus only has the two documents listed above.
+For each document, write down the vector of normalized tf -idf weights where each dimension is a word bigram. Perform Euclidean normalization after calculating the tf -idf weight vector $w_{t, d}$. As in c, use the format \{bigram: value, bigram: value, ...\}. Assume that the corpus only has the two documents listed above.
 e. For each of the weighting schemes in parts c and d, compute the cosine similarity between documents $A$ and $B$. Briefly explain any insights you draw from your answers.
 f. Let's say you now have the opportunity to add one document to the corpus. Design a document J' to add to the corpus such that the cosine similarity of A and B under part d remains unchanged.
 

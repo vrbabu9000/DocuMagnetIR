@@ -1,6 +1,4 @@
-\title{
-CS371R: Final Exam
-}
+## 1. CS371R: Final Exam
 
 Dec. 13, $2024$
 
@@ -8,7 +6,8 @@ NAME: $\qquad$
 
 UTEID: $\qquad$
 
-\section{INSTRUCTIONS:}
+## 2. INSTRUCTIONS:
+
 - This exam has $8$ problems and $15$ pages. Before beginning, check that your exam is complete.
 - You have $2$ hours to complete the exam.
 - The exam is closed book, closed notes, and closed computer, except for a scientific calculator and the provided equation sheets.
@@ -18,17 +17,20 @@ UTEID: $\qquad$
 
 Final grades will be available on Canvas on or before December $17$.
 Thank you for a great semester! Good luck and have a good break!
+
 1. ( $8$ points) Assume that the total number of documents in a corpus is $20,000$ and that the following words occur in the following number of documents:
+
 - "and" occurs in 19,500 documents
 - "at" occurs in 18,000 documents
 - "Austin" occurs in $100$ documents
 - "of" occurs in $18,000$ documents
 - "Texas" occurs in $500$ documents
 - "the" occurs in 19,500 documents
-- "state" occurs in $15,000$ documents
+- "state" occurs in 15,000 documents
 - "University" occurs in 10,000 documents
 
 You are given the following list of stop words:
+
 - "and"
 - "at"
 - "of"
@@ -42,29 +44,28 @@ Perform stop word removal and order tokens in the vector alphabetically.
 Page A points to page C.
 Page B points to page C.
 Page C points to page D.
-
 Consider running the PageRank algorithm on this subgraph of pages. Assume $\alpha=0.15$. Simulate the algorithm for three iterations. Show the page rank scores for each page twice for each iteration, both before and after normalization, order the elments in the vectors in the sequence: $\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}$.
 (a) Show work for iteration $1$ below and fill this table:
-\begin{tabular}{|l|l|l|l|l|}
-\hline Page Rank & A & B & C & D \\
-\hline Before norm & & & & \\
-\hline After norm & & & & \\
-\hline
-\end{tabular}
+
+| Page Rank | A | B | C | D |
+| :--- | :--- | :--- | :--- | :--- |
+| Before norm |  |  |  |  |
+| After norm |  |  |  |  |
+
 (b) Show work for iteration $2$ below and fill this table:
-\begin{tabular}{|l|l|l|l|l|}
-\hline Page Rank & A & B & C & D \\
-\hline Before norm & & & & \\
-\hline After norm & & & & \\
-\hline
-\end{tabular}
+
+| Page Rank | A | B | C | D |
+| :---: | :---: | :---: | :---: | :---: |
+| Before norm |  |  |  |  |
+| After norm |  |  |  |  |
+
 (c) Show work for iteration $3$ below and fill this table:
-\begin{tabular}{|l|l|l|l|l|}
-\hline Page Rank & A & B & C & D \\
-\hline Before norm & & & & \\
-\hline After norm & & & & \\
-\hline
-\end{tabular}
+
+| Page Rank | A | B | C | D |
+| :---: | :---: | :---: | :---: | :---: |
+| Before norm |  |  |  |  |
+| After norm |  |  |  |  |
+
 3. (15 points) Consider examples described using the following three binary-valued features:
 
 A: $0,1$
@@ -80,61 +81,60 @@ Assume all of the weights and the threshold start at $0$ and the learning rate i
 
 If represented as a logical rule, what is the function learned?
 (a) Iteration 1:
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\
-\hline [ $0,0,0]$ & & & & & \\
-\hline [0,1,1] & & & & & \\
-\hline [1,1,1] & & & & & \\
-\hline
-\end{tabular}
+
+| Example | Classification (right/wrong) | W(A) | W(B) | W(C) | Threshold |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [0,0,0] |  |  |  |  |  |
+| [0,1,1] |  |  |  |  |  |
+| [1,1,1] |  |  |  |  |  |
+
 (b) Iteration 2:
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\
-\hline [ $0,0,0]$ & & & & & \\
-\hline [0,1,1] & & & & & \\
-\hline [1,1,1] & & & & & \\
-\hline
-\end{tabular}
+
+| Example | Classification (right/wrong) | W(A) | W(B) | W(C) | Threshold |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [ $0,0,0$ ] |  |  |  |  |  |
+| [0,1,1] |  |  |  |  |  |
+| [1,1,1] |  |  |  |  |  |
+
 (c) Iteration 3:
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\
-\hline [0,0,0] & & & & & \\
-\hline [0,1,1] & & & & & \\
-\hline [1,1,1] & & & & & \\
-\hline
-\end{tabular}
+
+| Example | Classification (right/wrong) | W(A) | W(B) | W(C) | Threshold |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [0,0,0] |  |  |  |  |  |
+| [0,1,1] |  |  |  |  |  |
+| [1,1,1] |  |  |  |  |  |
+
 (d) Iteration 4:
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\
-\hline [0,0,0] & & & & & \\
-\hline [0,1,1] & & & & & \\
-\hline [1,1,1] & & & & & \\
-\hline
-\end{tabular}
+
+| Example | Classification (right/wrong) | W(A) | W(B) | W(C) | Threshold |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [ $0,0,0$ ] |  |  |  |  |  |
+| [0,1,1] |  |  |  |  |  |
+| [1,1,1] |  |  |  |  |  |
 
 What logical rule is learned for this concept?
 4. (9 points)
 (a) Assuming a two-dimensional vector space and the use of cosine similarity as the similarity metric, graphically illustrate why the Rocchio text categorization algorithm does not guarantee a consistent hypothesis (i.e. a hypothesis which correctly classifies all of the training examples).
 More specifically, in the following graph, draw two document vectors for category $B$. Then using the document vectors in the graph, construct the prototype vectors for both categories $A$ and $B$, which must be drawn much thicker than the document vectors. Show that at least one of the training documents would be misclassified.
-![](https://cdn.mathpix.com/cropped/2025_04_23_bbc61e29f322a1e4cf0bg-08.jpg?height=855&width=1264&top_left_y=868&top_left_x=512)
-![](https://cdn.mathpix.com/cropped/2025_04_23_bbc61e29f322a1e4cf0bg-08.jpg?height=253&width=687&top_left_y=1765&top_left_x=1093)
+![](https://cdn.mathpix.com/cropped/2025_04_23_c31e039875609d7f6884g-08.jpg?height=855&width=1264&top_left_y=868&top_left_x=512)
+![](https://cdn.mathpix.com/cropped/2025_04_23_c31e039875609d7f6884g-08.jpg?height=251&width=675&top_left_y=1769&top_left_x=1099)
 (b) Does the $3$ Nearest-Neighbor algorithm guarantee a consistent hypothesis (one that fits all of the training data)? Why or why not?
 5. (14 points) Assume we want to categorize computer-science documents into the following categories: Systems, Theory, AI. Consider performing naive Bayes classification with a simple model in which there is a binary feature for each significant word indicating its presence or absence in the document. The following probabilities have been estimated by analyzing a corpus of preclassified training documents.
-\begin{tabular}{|l|lll|}
-\hline$c$ & Systems & Theory & AI \\
-\hline$P(c)$ & $0.35$ & $0.40$ & $0.25$ \\
-$P($ theorem $\mid c)$ & $0.05$ & $0.8$ & $0.10$ \\
-$P($ search $\mid c)$ & $0.30$ & $0.40$ & $0.60$ \\
-$P($ heuristic $\mid c)$ & $0.05$ & $0.01$ & $0.50$ \\
-$P($ disk $\mid c)$ & $0.30$ & $0.02$ & $0.01$ \\
-$P($ data $\mid c)$ & $0.50$ & $0.01$ & $0.20$ \\
-\hline
-\end{tabular}
+
+| $c$ | Systems | Theory | AI |
+| :--- | :--- | :--- | :--- |
+| $P(c)$ | $0.35$ | $0.40$ | $0.25$ |
+| $P($ theorem $\mid c)$ | $0.05$ | $0.8$ | $0.10$ |
+| $P($ search $\mid c)$ | $0.30$ | $0.40$ | $0.60$ |
+| $P($ heuristic $\mid c)$ | $0.05$ | $0.01$ | $0.50$ |
+| $P($ disk $\mid c)$ | $0.30$ | $0.02$ | $0.01$ |
+| $P($ data $\mid c)$ | $0.50$ | $0.01$ | $0.20$ |
 
 Assuming the probability of each evidence word is independent given the category of the text, compute the posterior probability for each of the possible categories for each of the following short texts. Assume the categories are disjoint and complete for this application. Ignore any words that are not in the table.
 (a) Data on heuristic search for theorem proving
 (b) Search for data stored on disk
 6. (11 points) Consider training a naive Bayes classifier as in the previous problem and estimating the requisite conditional probability parameters from a set of training examples. Assume there are three possible colors: (red, blue, green) and two possible classes: (positive and negative). Assume the training data has the following properties.
+
 - There are $7$ positive examples that are red
 - There are $4$ positive examples that are blue
 - There are $0$ positive examples that are green
@@ -143,24 +143,23 @@ Assuming the probability of each evidence word is independent given the category
 - There are $9$ negative examples that are green
 
 Assume Laplace smoothing is used to estimate parameters with $m=1$ and $p=1 / 3$ (i.e. a prior uniform distribution over the $3$ colors). Calculate the conditional probability parameters in the table below.
-\begin{tabular}{|l||l|l|}
-\hline$c$ & positive & negative \\
-\hline$P($ red $\mid c)$ & & \\
-\hline$P(\operatorname{blue} \mid c)$ & & \\
-\hline$P($ green $\mid c)$ & & \\
-\hline
-\end{tabular}
+
+| $c$ | positive | negative |
+| :--- | :--- | :--- |
+| $P($ red $\mid c)$ |  |  |
+| $P(\operatorname{blue} \mid c)$ |  |  |
+| $P($ green $\mid c)$ |  |  |
+
 7. (11 points) Consider the following item ratings to be used by collaborative filtering.
-\begin{tabular}{|l|llll|l|}
-\hline Item & User1 & User2 & User3 & User4 & Active User \\
-\hline A & $1$ & $5$ & $8$ & $7$ & $9$ \\
-B & & $4$ & $3$ & $3$ & $5$ \\
-C & $9$ & & $2$ & $1$ & $1$ \\
-D & $4$ & $1$ & $9$ & $8$ & \\
-E & $8$ & $8$ & $3$ & $1$ & \\
-\hline$c_{i j}$ & $-1$ & $1$ & $0.933$ & $0.982$ & \\
-\hline
-\end{tabular}
+
+| Item | User1 | User2 | User3 | User4 | Active User |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| A | $1$ | $5$ | $8$ | $7$ | $9$ |
+| B |  | $4$ | $3$ | $3$ | $5$ |
+| C | $9$ |  | $2$ | $1$ | $1$ |
+| D | $4$ | $1$ | $9$ | $8$ |  |
+| E | $8$ | $8$ | $3$ | $1$ |  |
+| $c_{i j}$ | $-1$ | $1$ | $0.933$ | $0.982$ |  |
 
 The Pearson correlation of each of the existing users with the active user $\left(c_{i j}\right)$ is already given in the table. Compute the predicted rating for the active user for items D and E using standard significance weighting and the two most similar neighbors to make predictions using the method discussed in class.
 8. (20 points) Provide short answers (1-3 sentences) for each of the following questions:
@@ -187,3 +186,4 @@ When is the perceptron algorithm guaranteed to converge to a function that accur
 (Extra credit) Who is the inventor of the World Wide Web and where was he working at the time he developed it?
 (Extra credit) What neural-network pioneer recently won a Nobel Prize in Physics?
 (Extra Credit) What fundamental problem in biochemistry was solved using deep learning, resulting in researchers at Deep Mind also winning the recent Nobel prize in chemistry?
+
