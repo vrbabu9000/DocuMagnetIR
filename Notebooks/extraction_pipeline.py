@@ -22,6 +22,36 @@ APP_KEY = app_key  # Replace with your actual app key
 MAX_RETRIES = 5
 RETRY_DELAY = 5  # seconds
 
+options = {
+    # Core parameters
+    "streaming": True,  # Enable streaming for the request
+    "include_equation_tags": True,  # Include equation number tags
+    "include_smiles": True,  # Enable chemistry diagram OCR
+    "include_chemistry_as_image": True,  # Return image crop with SMILES in alt-text
+    "include_diagram_text": True,  # Enable text extraction from diagrams
+    "numbers_default_to_math": True,  # Numbers are always treated as math
+    
+    # Delimiter settings
+    "math_inline_delimiters": ["$", "$"],  # Inline math delimiters
+    "math_display_delimiters": ["$$", "$$"],  # Display math delimiters
+    
+    # Page settings
+    "page_ranges": "1-",  # Process all pages
+    
+    # Processing options
+    "enable_spell_check": True,  # Enable predictive mode for English handwriting
+    "auto_number_sections": True,  # Automatically number sections
+    "remove_section_numbering": False,  # Don't remove existing section numbering
+    "preserve_section_numbering": False,  # Keep existing section numbering
+    "enable_tables_fallback": True,  # Enable advanced table processing
+    "fullwidth_punctuation": False,  # Use halfwidth Unicode for punctuation
+    
+    # Conversion formats
+    "conversion_formats": {
+        "md": True,       # Markdown
+    }
+}
+
 async def upload_pdf_file(file_path):
     """
     Uploads a PDF file from the local filesystem for processing and retrieves the `pdf_id`.
@@ -34,7 +64,7 @@ async def upload_pdf_file(file_path):
     files = {"file": open(file_path, "rb")}
     
     # Add streaming parameter
-    data = {"options_json": json.dumps({"streaming": True})}
+    data = {"options_json": json.dumps(options)}
     
     try:
         async with httpx.AsyncClient() as client:
@@ -156,14 +186,28 @@ async def stream_pdf(pdf_id):
 
 async def save_results(results, output_file):
     """
-    Saves the results to a file.
+    Saves the results to a file and extracts MMD content.
     """
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     
     try:
+        # Save the JSON results for reference
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(results, f, indent=2)
         print(f"Results saved to {output_file}")
+        
+        # Extract text content from streaming results and save as MMD
+        mmd_content = ""
+        for chunk in results:
+            if 'text' in chunk:
+                mmd_content += chunk['text']
+        
+        # Save MMD content
+        mmd_file = output_file.replace('_results.json', '.mmd')
+        with open(mmd_file, 'w', encoding='utf-8') as f:
+            f.write(mmd_content)
+        print(f"MMD content extracted and saved to {mmd_file}")
+        
         return True
     except Exception as e:
         print(f"Error saving results: {e}")
@@ -181,27 +225,85 @@ async def process_pdf(file_path, output_dir="results"):
     if not pdf_id:
         return False
     
-    # 2. Stream the results (no need to wait for processing completion)
+    # 2. Stream the results
     results = await stream_pdf(pdf_id)
     
-    if not results:
-        print("No results were streamed. Trying to check status...")
-        # If streaming didn't work, fall back to waiting for processing
-        processing_completed = await wait_for_processing(pdf_id)
-        if not processing_completed:
-            print("PDF processing failed")
-            return False
-    
-    # 3. Save the results
+    # 3. Save the streamed results and extract MMD
     file_name = Path(file_path).stem
     output_file = os.path.join(output_dir, f"{file_name}_results.json")
     success = await save_results(results, output_file)
     
+    # 4. Download additional formats after processing is complete
+    await download_conversion_formats(pdf_id, output_dir, file_name)
+    
     return success
+
+async def download_conversion_formats(pdf_id, output_dir, file_name):
+    """
+    Downloads available conversion formats directly from Mathpix API endpoints.
+    Ensures processing is complete before attempting download.
+    """
+    print(f"Waiting for processing to complete before downloading formats...")
+    
+    # Wait for processing to complete
+    processing_complete = await wait_for_processing(pdf_id)
+    if not processing_complete:
+        print("Processing did not complete. Some formats may not be available.")
+    
+    print(f"Downloading conversion formats for PDF ID: {pdf_id}")
+    
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Define formats to download
+    formats = [
+        {"ext": "mmd", "binary": False},
+        {"ext": "md", "binary": False},
+        {"ext": "lines.mmd.json", "binary": False}
+    ]
+    
+    for format_info in formats:
+        ext = format_info["ext"]
+        is_binary = format_info["binary"]
+        
+        url = f"{BASE_URL}/{pdf_id}.{ext}"
+        headers = {"app_key": APP_KEY}
+        
+        print(f"Requesting {ext} format...")
+        
+        try:
+            async with httpx.AsyncClient() as client:
+                response = await client.get(url, headers=headers)
+                
+                if response.status_code == 200:
+                    # Determine the output filename
+                    output_filename = f"{file_name}.{ext}"
+                    if ext == "tex":
+                        output_filename = f"{file_name}.tex.zip"
+                    
+                    output_path = os.path.join(output_dir, output_filename)
+                    
+                    # Save the content
+                    if is_binary:
+                        with open(output_path, "wb") as f:
+                            f.write(response.content)
+                    else:
+                        with open(output_path, "w", encoding="utf-8") as f:
+                            f.write(response.text)
+                    
+                    print(f"Downloaded {ext} format to {output_path}")
+                else:
+                    print(f"Failed to download {ext} format: {response.status_code}, {response.text}")
+            
+        except Exception as e:
+            print(f"Error downloading {ext} format: {e}")
+            print(traceback.format_exc())
+    
+    return True
 
 async def main():
     # Replace with your PDF file path
-    pdf_path = r"d:\MSE_DS_JHU\Semester1\Information_Retrieval_Web_Agents\Git\DocuMagnetIR\data\sample_papers\ps1_updated.pdf"
+    pdf_path = r"D:\MSE_DS_JHU\Semester1\Information_Retrieval_Web_Agents\Git\DocuMagnetIR\data\sample_papers\final_exam.pdf"
     
     success = await process_pdf(pdf_path)
     if success:

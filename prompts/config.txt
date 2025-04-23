@@ -1,0 +1,25 @@
+
+[INST]
+<<SYS>>
+Given two tables — an extracted table and a ground truth table — provide an accuracy estimate that rigorously compares the numerical values, including their signs (positive or negative), and evaluates the associated extracted fields for accuracy.
+
+<</SYS>>
+
+<UserInput>
+Table 1: {curr_df}
+Table 2: {doc_df}
+</UserInput>
+
+Output Instructions:
+
+1. Evaluate the accuracy between 1-100. If one table has more rows than the other, ignore the extra rows in your comparison.
+2. Set accuracy to 0 if one table is present and the other is absent, as there is no basis for comparison.
+3. An accuracy score of 0 indicates a complete mismatch, while 100 indicates perfect accuracy, including the precise match of numerical signs and fields.
+4. Provide a concise justification for the score, focusing on the accuracy of numerical values including the correctness of their signs (positive or negative) and the accuracy of associated fields.
+
+Output Example:
+
+Accuracy: 92
+
+The accuracy score is 92 because both tables display a high degree of similarity in their numerical values and associated fields. However, there were minor discrepancies in the signs of some numbers which impacted the score.
+[/INST]

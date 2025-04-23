@@ -1,0 +1,92 @@
+[
+  {
+    "version": "SuperNet-100p1",
+    "text": "\\title{\nCS371R: Final Exam\n}\n\nDec. 13, $2024$\n\nNAME: $\\qquad$\n\nUTEID: $\\qquad$\n\n\\section{INSTRUCTIONS:}\n- This exam has $8$ problems and $15$ pages. Before beginning, check that your exam is complete.\n- You have $2$ hours to complete the exam.\n- The exam is closed book, closed notes, and closed computer, except for a scientific calculator and the provided equation sheets.\n- Mark your answers on the exam itself. We will not grade answers on scratch paper.\n- Make sure that your answers are legible and your handwriting is dark. We will be scanning the exams and grading them using Gradescope.\n- In order to maximize your chance of getting partial credit, show all of your work and intermediate results.\n\nFinal grades will be available on Canvas on or before December $17$.\nThank you for a great semester! Good luck and have a good break!",
+    "page_idx": 1,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n1. ( $8$ points) Assume that the total number of documents in a corpus is $20,000$ and that the following words occur in the following number of documents:\n- \"and\" occurs in 19,500 documents\n- \"at\" occurs in 18,000 documents\n- \"Austin\" occurs in $100$ documents\n- \"of\" occurs in $18,000$ documents\n- \"Texas\" occurs in $500$ documents\n- \"the\" occurs in 19,500 documents\n- \"state\" occurs in $15,000$ documents\n- \"University\" occurs in 10,000 documents\n\nYou are given the following list of stop words:\n- \"and\"\n- \"at\"\n- \"of\"\n- \"the\"\n\nAssuming that term frequencies are normalized by the maximum frequency in the given document, calculate the TF-IDF weighted term vector for the following simple document:\n\"University of Texas at Austin and the state of Texas\"\nPerform stop word removal and order tokens in the vector alphabetically.",
+    "page_idx": 2,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n2. (12 points) Consider the following pages and the set of web pages that they link to:\n\nPage A points to page C.\nPage B points to page C.\nPage C points to page D.\n\nConsider running the PageRank algorithm on this subgraph of pages. Assume $\\alpha=0.15$. Simulate the algorithm for three iterations. Show the page rank scores for each page twice for each iteration, both before and after normalization, order the elments in the vectors in the sequence: $\\mathrm{A}, \\mathrm{B}, \\mathrm{C}, \\mathrm{D}$.\n(a) Show work for iteration $1$ below and fill this table:\n\\begin{tabular}{|l|l|l|l|l|}\n\\hline Page Rank & A & B & C & D \\\\\n\\hline Before norm & & & & \\\\\n\\hline After norm & & & & \\\\\n\\hline\n\\end{tabular}",
+    "page_idx": 3,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n(b) Show work for iteration $2$ below and fill this table:\n\\begin{tabular}{|l|l|l|l|l|}\n\\hline Page Rank & A & B & C & D \\\\\n\\hline Before norm & & & & \\\\\n\\hline After norm & & & & \\\\\n\\hline\n\\end{tabular}\n(c) Show work for iteration $3$ below and fill this table:\n\\begin{tabular}{|l|l|l|l|l|}\n\\hline Page Rank & A & B & C & D \\\\\n\\hline Before norm & & & & \\\\\n\\hline After norm & & & & \\\\\n\\hline\n\\end{tabular}",
+    "page_idx": 4,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n3. (15 points) Consider examples described using the following three binary-valued features:\n\nA: $0,1$\nB: 0,1\nC: 0,1\n\nShow the trace of a perceptron learning from the training set of $[A, B, C]$ examples:\n[0,0,0]: positive\n[0,1,1]: positive\n[1,1,1]: negative\n\nAssume all of the weights and the threshold start at $0$ and the learning rate is $1$ and that during each epoch the examples are processed in the exact order given above. Show the weight vector (in the order $[\\mathrm{A}, \\mathrm{B}, \\mathrm{C}]$ ) and the threshold after every example presentation. The procedure should converge after only $4$ epochs. NOTE: For the purposes of this problem, assume that the net input must be strictly greater than the threshold in order output a $1$ (so this is slightly different from the equations in neural-net lecture slides).\n\nIf represented as a logical rule, what is the function learned?\n(a) Iteration 1:\n\\begin{tabular}{|l|l|l|l|l|l|}\n\\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\\\\n\\hline [ $0,0,0]$ & & & & & \\\\\n\\hline [0,1,1] & & & & & \\\\\n\\hline [1,1,1] & & & & & \\\\\n\\hline\n\\end{tabular}",
+    "page_idx": 5,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n(b) Iteration 2:\n\\begin{tabular}{|l|l|l|l|l|l|}\n\\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\\\\n\\hline [ $0,0,0]$ & & & & & \\\\\n\\hline [0,1,1] & & & & & \\\\\n\\hline [1,1,1] & & & & & \\\\\n\\hline\n\\end{tabular}\n(c) Iteration 3:\n\\begin{tabular}{|l|l|l|l|l|l|}\n\\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\\\\n\\hline [0,0,0] & & & & & \\\\\n\\hline [0,1,1] & & & & & \\\\\n\\hline [1,1,1] & & & & & \\\\\n\\hline\n\\end{tabular}",
+    "page_idx": 6,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n(d) Iteration 4:\n\\begin{tabular}{|l|l|l|l|l|l|}\n\\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\\\\n\\hline [0,0,0] & & & & & \\\\\n\\hline [0,1,1] & & & & & \\\\\n\\hline [1,1,1] & & & & & \\\\\n\\hline\n\\end{tabular}\n\nWhat logical rule is learned for this concept?",
+    "page_idx": 7,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n4. (9 points)\n(a) Assuming a two-dimensional vector space and the use of cosine similarity as the similarity metric, graphically illustrate why the Rocchio text categorization algorithm does not guarantee a consistent hypothesis (i.e. a hypothesis which correctly classifies all of the training examples).\nMore specifically, in the following graph, draw two document vectors for category $B$. Then using the document vectors in the graph, construct the prototype vectors for both categories $A$ and $B$, which must be drawn much thicker than the document vectors. Show that at least one of the training documents would be misclassified.\n![](https://cdn.mathpix.com/cropped/2025_04_23_bbc61e29f322a1e4cf0bg-08.jpg?height=855&width=1264&top_left_y=868&top_left_x=512)\n![](https://cdn.mathpix.com/cropped/2025_04_23_bbc61e29f322a1e4cf0bg-08.jpg?height=253&width=687&top_left_y=1765&top_left_x=1093)\n(b) Does the $3$ Nearest-Neighbor algorithm guarantee a consistent hypothesis (one that fits all of the training data)? Why or why not?",
+    "page_idx": 8,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n5. (14 points) Assume we want to categorize computer-science documents into the following categories: Systems, Theory, AI. Consider performing naive Bayes classification with a simple model in which there is a binary feature for each significant word indicating its presence or absence in the document. The following probabilities have been estimated by analyzing a corpus of preclassified training documents.\n\\begin{tabular}{|l|lll|}\n\\hline$c$ & Systems & Theory & AI \\\\\n\\hline$P(c)$ & $0.35$ & $0.40$ & $0.25$ \\\\\n$P($ theorem $\\mid c)$ & $0.05$ & $0.8$ & $0.10$ \\\\\n$P($ search $\\mid c)$ & $0.30$ & $0.40$ & $0.60$ \\\\\n$P($ heuristic $\\mid c)$ & $0.05$ & $0.01$ & $0.50$ \\\\\n$P($ disk $\\mid c)$ & $0.30$ & $0.02$ & $0.01$ \\\\\n$P($ data $\\mid c)$ & $0.50$ & $0.01$ & $0.20$ \\\\\n\\hline\n\\end{tabular}\n\nAssuming the probability of each evidence word is independent given the category of the text, compute the posterior probability for each of the possible categories for each of the following short texts. Assume the categories are disjoint and complete for this application. Ignore any words that are not in the table.\n(a) Data on heuristic search for theorem proving",
+    "page_idx": 9,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n(b) Search for data stored on disk",
+    "page_idx": 10,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n6. (11 points) Consider training a naive Bayes classifier as in the previous problem and estimating the requisite conditional probability parameters from a set of training examples. Assume there are three possible colors: (red, blue, green) and two possible classes: (positive and negative). Assume the training data has the following properties.\n- There are $7$ positive examples that are red\n- There are $4$ positive examples that are blue\n- There are $0$ positive examples that are green\n- There are $0$ negative examples that are red\n- There are $3$ negative examples that are blue\n- There are $9$ negative examples that are green\n\nAssume Laplace smoothing is used to estimate parameters with $m=1$ and $p=1 / 3$ (i.e. a prior uniform distribution over the $3$ colors). Calculate the conditional probability parameters in the table below.\n\\begin{tabular}{|l||l|l|}\n\\hline$c$ & positive & negative \\\\\n\\hline$P($ red $\\mid c)$ & & \\\\\n\\hline$P(\\operatorname{blue} \\mid c)$ & & \\\\\n\\hline$P($ green $\\mid c)$ & & \\\\\n\\hline\n\\end{tabular}",
+    "page_idx": 11,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n7. (11 points) Consider the following item ratings to be used by collaborative filtering.\n\\begin{tabular}{|l|llll|l|}\n\\hline Item & User1 & User2 & User3 & User4 & Active User \\\\\n\\hline A & $1$ & $5$ & $8$ & $7$ & $9$ \\\\\nB & & $4$ & $3$ & $3$ & $5$ \\\\\nC & $9$ & & $2$ & $1$ & $1$ \\\\\nD & $4$ & $1$ & $9$ & $8$ & \\\\\nE & $8$ & $8$ & $3$ & $1$ & \\\\\n\\hline$c_{i j}$ & $-1$ & $1$ & $0.933$ & $0.982$ & \\\\\n\\hline\n\\end{tabular}\n\nThe Pearson correlation of each of the existing users with the active user $\\left(c_{i j}\\right)$ is already given in the table. Compute the predicted rating for the active user for items D and E using standard significance weighting and the two most similar neighbors to make predictions using the method discussed in class.",
+    "page_idx": 12,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n8. (20 points) Provide short answers (1-3 sentences) for each of the following questions:\n\nIf only positive feedback is given during relevance feedback, will it mainly increase recall or precision? Why?\n\nWhy is $k$ nearest neighbor typically better than plain nearest neighbor?\n\nWhat is the \"first rater\" problem in collaborative filtering?\n\nIn addition to a similarity metric for instances, Hierarchical Agglomerative Clustering (HAC) also requires what other type of similarity metric (variations of which result in single-link, complete-link or group average versions of HAC)?",
+    "page_idx": 13,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n\nWhat is probably the best explanation for why Zipf's law applies to so many phenomenon such as personal wealth, city size, and book sales as well as word frequency? Give a brief explanation, not just a short name for the phenomenon.\n\nWhat is the purpose of the $E(p)$ term in the PageRank algorithm?\n\nWhat is stipulated by section $230$ of the US Communication Decency Act?\n\nWhat is the computational complexity of the self-attention mechanism of the transformer neural architecture, assuming it is given an input context of $n$ tokens? Briefly explain why it has this complexity.",
+    "page_idx": 14,
+    "pdf_selected_len": 15
+  },
+  {
+    "version": "SuperNet-100p1",
+    "text": "\n\nWhy is naive Bayes text categorization typically implemented using logarithms of probabilities rather than probabilities themselves?\n\nWhen is the perceptron algorithm guaranteed to converge to a function that accurately classifies all of the training examples?\n(Extra credit) Who is the inventor of the World Wide Web and where was he working at the time he developed it?\n(Extra credit) What neural-network pioneer recently won a Nobel Prize in Physics?\n(Extra Credit) What fundamental problem in biochemistry was solved using deep learning, resulting in researchers at Deep Mind also winning the recent Nobel prize in chemistry?",
+    "page_idx": 15,
+    "pdf_selected_len": 15
+  }
+]
