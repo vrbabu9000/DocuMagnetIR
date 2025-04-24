@@ -10,7 +10,7 @@ async def process_documents():
     # Get the absolute path to the project root directory
     # This assumes main.py is in the 'main' folder of your project
     current_file = Path(__file__)
-    project_root = current_file.parent.parent  # Go up one level from main.py
+    project_root = current_file.parent.parent.parent  # Go up one level from main.py
     
     # Create absolute paths for input and output directories
     input_dir = os.path.join(project_root, "data", "sample_papers")
