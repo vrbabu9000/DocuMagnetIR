@@ -1,0 +1,27 @@
+{
+  "1": {
+    "question_start": "\\section{Problem $1$ - Positional Ind",
+    "question_type": "Theory",
+    "sub_questions_independent": false
+  },
+  "2": {
+    "question_start": "\\section{Problem $2$ - Dictionary Storag",
+    "question_type": "Numerical",
+    "sub_questions_independent": true
+  },
+  "3": {
+    "question_start": "\\section{Problem $3$ - Postings Compres",
+    "question_type": "Numerical",
+    "sub_questions_independent": true
+  },
+  "4": {
+    "question_start": "\\section{Problem $4$ - Tolerant Retriev",
+    "question_type": "Numerical",
+    "sub_questions_independent": true
+  },
+  "5": {
+    "question_start": "\\section{Problem $5$ - Vector Space Mod",
+    "question_type": "Numerical",
+    "sub_questions_independent": true
+  }
+}
