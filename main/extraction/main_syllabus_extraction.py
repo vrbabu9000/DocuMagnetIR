@@ -8,7 +8,7 @@ async def process_syllabus_documents():
     """
     Main function to process syllabus documents:
     1. Extract text from syllabus PDFs using Mathpix API
-    2. Post-process the extracted text with Claude API to structure the data
+    2. Post-process the extracted text with Claude API to structure the data (one file at a time)
     """
     # Get the absolute path to the project root directory
     # This assumes main_syllabus_extraction.py is in the same directory level as other scripts
@@ -32,10 +32,11 @@ async def process_syllabus_documents():
         print("No syllabi were successfully extracted. Post-processing will be skipped.")
         return
     
-    # Step 2: Post-process extracted syllabi with Claude API
+    # Step 2: Post-process extracted syllabi with Claude API (one file at a time)
     print("\n" + "="*80)
     print("Starting syllabus post-processing with Claude API...")
     print("="*80)
+    print("Note: Processing files one at a time (no batching)")
     
     processor = SyllabusPostProcessor(root_dir=project_root)
     post_success, post_failed, post_skipped = await processor.run()

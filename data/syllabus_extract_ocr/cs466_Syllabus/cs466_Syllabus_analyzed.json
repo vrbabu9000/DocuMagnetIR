@@ -9,25 +9,27 @@
         "Term weighting",
         "Similarity measures",
         "Probabilistic IR models",
-        "Relevance Feedback"
+        "Query expansion",
+        "Relevance feedback"
       ]
     },
     {
       "name": "Text Processing and Analysis",
       "subtopics": [
-        "Preliminary stages of text analysis",
+        "Preliminary text analysis",
+        "Document processing",
         "Indexing techniques",
         "Inverted files",
         "Signature files",
         "PAT trees",
         "Suffix arrays",
-        "Query expansion",
-        "Thesaurus creation",
-        "Clustering algorithms"
+        "Clustering algorithms",
+        "Singular Value Decomposition (SVD)",
+        "Latent Semantic Indexing (LSI)"
       ]
     },
     {
-      "name": "Information Extraction",
+      "name": "Information Extraction and Classification",
       "subtopics": [
         "Named entity recognition",
         "Semantic frame analysis",
@@ -36,7 +38,9 @@
         "Sentiment classification",
         "Authorship identification",
         "Language identification",
-        "Gender detection"
+        "Gender detection",
+        "Text classification",
+        "Spam detection"
       ]
     },
     {
@@ -47,20 +51,19 @@
         "HTTP protocols",
         "Collection fusion",
         "Metacrawler technologies",
-        "Web agent development"
+        "Web agent development",
+        "Collaborative filtering"
       ]
     },
     {
-      "name": "Advanced IR Topics",
+      "name": "Specialized Information Retrieval",
       "subtopics": [
-        "Text classification",
-        "Document routing",
-        "Document filtering",
-        "Spam detection",
-        "Information visualization",
-        "Collaborative filtering",
         "Music information retrieval",
-        "Image search"
+        "Image search",
+        "Information visualization",
+        "Dotplot",
+        "Texttiling",
+        "Graphical queries"
       ]
     }
   ]
