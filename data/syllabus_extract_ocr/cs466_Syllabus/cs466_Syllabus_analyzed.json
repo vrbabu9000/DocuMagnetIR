@@ -1,0 +1,70 @@
+{
+  "course_name": "Information Retrieval and Web Agents",
+  "topics": [
+    {
+      "name": "Information Retrieval Models",
+      "subtopics": [
+        "Boolean IR models",
+        "Vector-based IR models",
+        "Term weighting",
+        "Similarity measures",
+        "Probabilistic IR models",
+        "Query expansion",
+        "Relevance feedback"
+      ]
+    },
+    {
+      "name": "Text Processing and Analysis",
+      "subtopics": [
+        "Preliminary text analysis",
+        "Document processing",
+        "Indexing techniques",
+        "Inverted files",
+        "Signature files",
+        "PAT trees",
+        "Suffix arrays",
+        "Clustering algorithms",
+        "Singular Value Decomposition (SVD)",
+        "Latent Semantic Indexing (LSI)"
+      ]
+    },
+    {
+      "name": "Information Extraction and Classification",
+      "subtopics": [
+        "Named entity recognition",
+        "Semantic frame analysis",
+        "Sense tagging",
+        "Semantic disambiguation",
+        "Sentiment classification",
+        "Authorship identification",
+        "Language identification",
+        "Gender detection",
+        "Text classification",
+        "Spam detection"
+      ]
+    },
+    {
+      "name": "Web Information Retrieval",
+      "subtopics": [
+        "Web robots",
+        "Web crawlers",
+        "HTTP protocols",
+        "Collection fusion",
+        "Metacrawler technologies",
+        "Web agent development",
+        "Collaborative filtering"
+      ]
+    },
+    {
+      "name": "Specialized Information Retrieval",
+      "subtopics": [
+        "Music information retrieval",
+        "Image search",
+        "Information visualization",
+        "Dotplot",
+        "Texttiling",
+        "Graphical queries"
+      ]
+    }
+  ]
+}
