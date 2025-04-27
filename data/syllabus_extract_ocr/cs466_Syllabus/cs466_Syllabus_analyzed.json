@@ -9,23 +9,19 @@
         "Term weighting",
         "Similarity measures",
         "Probabilistic IR models",
-        "Query expansion",
-        "Relevance feedback"
+        "Relevance Feedback"
       ]
     },
     {
       "name": "Text Processing and Analysis",
       "subtopics": [
-        "Preliminary text analysis",
+        "Preliminary stages of text analysis",
         "Document processing",
         "Indexing techniques",
         "Inverted files",
         "Signature files",
         "PAT trees",
-        "Suffix arrays",
-        "Clustering algorithms",
-        "Singular Value Decomposition (SVD)",
-        "Latent Semantic Indexing (LSI)"
+        "Suffix arrays"
       ]
     },
     {
@@ -51,7 +47,18 @@
         "HTTP protocols",
         "Collection fusion",
         "Metacrawler technologies",
-        "Web agent development",
+        "Web agent development"
+      ]
+    },
+    {
+      "name": "Advanced IR Topics",
+      "subtopics": [
+        "Query expansion",
+        "Thesaurus creation",
+        "Clustering algorithms",
+        "Singular Value Decomposition (SVD)",
+        "Latent Semantic Indexing (LSI)",
+        "Information visualization",
         "Collaborative filtering"
       ]
     },
@@ -60,10 +67,7 @@
       "subtopics": [
         "Music information retrieval",
         "Image search",
-        "Information visualization",
-        "Dotplot",
-        "Texttiling",
-        "Graphical queries"
+        "Web agent case studies"
       ]
     }
   ]

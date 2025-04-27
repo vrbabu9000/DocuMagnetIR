@@ -3,7 +3,7 @@ import asyncio
 import httpx
 import traceback
 from pathlib import Path
-from mathpix_extractor import MathpixExtractor
+from main.extraction.mathpix_extractor import MathpixExtractor
 
 
 class SyllabusExtractor(MathpixExtractor):

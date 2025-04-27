@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "final-old",
+    "source_file": "final-old.mmd",
+    "sub_questions_independent": null
+  },
+  {
+    "question_number": 2,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "final-old",
+    "source_file": "final-old.mmd",
+    "sub_questions_independent": false
+  },
+  {
+    "question_number": 3,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "final-old",
+    "source_file": "final-old.mmd",
+    "sub_questions_independent": false
+  },
+  {
+    "question_number": 4,
+    "question_text": "",
+    "question_type": "Theory",
+    "source_pdf": "final-old",
+    "source_file": "final-old.mmd",
+    "sub_questions_independent": false
+  },
+  {
+    "question_number": 5,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "final-old",
+    "source_file": "final-old.mmd",
+    "sub_questions_independent": false
+  },
+  {
+    "question_number": 6,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "final-old",
+    "source_file": "final-old.mmd",
+    "sub_questions_independent": null
+  },
+  {
+    "question_number": 7,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "final-old",
+    "source_file": "final-old.mmd",
+    "sub_questions_independent": null
+  },
+  {
+    "question_number": 8,
+    "question_text": "",
+    "question_type": "Short Answer",
+    "source_pdf": "final-old",
+    "source_file": "final-old.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 1,
+    "question_text": "",
+    "question_type": "True/False",
+    "source_pdf": "final_exam",
+    "source_file": "final_exam.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 2,
+    "question_text": "",
+    "question_type": "Short Answer",
+    "source_pdf": "final_exam",
+    "source_file": "final_exam.mmd",
+    "sub_questions_independent": false
+  },
+  {
+    "question_number": 3,
+    "question_text": "",
+    "question_type": "Short Answer",
+    "source_pdf": "final_exam",
+    "source_file": "final_exam.mmd",
+    "sub_questions_independent": false
+  },
+  {
+    "question_number": 4,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "final_exam",
+    "source_file": "final_exam.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 5,
+    "question_text": "",
+    "question_type": "Theory",
+    "source_pdf": "final_exam",
+    "source_file": "final_exam.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 6,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "final_exam",
+    "source_file": "final_exam.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 7,
+    "question_text": "",
+    "question_type": "Theory",
+    "source_pdf": "final_exam",
+    "source_file": "final_exam.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 8,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "final_exam",
+    "source_file": "final_exam.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 9,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "final_exam",
+    "source_file": "final_exam.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 10,
+    "question_text": "",
+    "question_type": "Theory",
+    "source_pdf": "final_exam",
+    "source_file": "final_exam.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 1,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "midterm-old",
+    "source_file": "midterm-old.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 2,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "midterm-old",
+    "source_file": "midterm-old.mmd",
+    "sub_questions_independent": null
+  },
+  {
+    "question_number": 3,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "midterm-old",
+    "source_file": "midterm-old.mmd",
+    "sub_questions_independent": null
+  },
+  {
+    "question_number": 4,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "midterm-old",
+    "source_file": "midterm-old.mmd",
+    "sub_questions_independent": null
+  },
+  {
+    "question_number": 5,
+    "question_text": "",
+    "question_type": "Theory",
+    "source_pdf": "midterm-old",
+    "source_file": "midterm-old.mmd",
+    "sub_questions_independent": null
+  },
+  {
+    "question_number": 6,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "midterm-old",
+    "source_file": "midterm-old.mmd",
+    "sub_questions_independent": false
+  },
+  {
+    "question_number": 7,
+    "question_text": "",
+    "question_type": "Short Answer",
+    "source_pdf": "midterm-old",
+    "source_file": "midterm-old.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 1,
+    "question_text": "",
+    "question_type": "Theory",
+    "source_pdf": "ps1_updated",
+    "source_file": "ps1_updated.mmd",
+    "sub_questions_independent": false
+  },
+  {
+    "question_number": 2,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "ps1_updated",
+    "source_file": "ps1_updated.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 3,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "ps1_updated",
+    "source_file": "ps1_updated.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 4,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "ps1_updated",
+    "source_file": "ps1_updated.mmd",
+    "sub_questions_independent": true
+  },
+  {
+    "question_number": 5,
+    "question_text": "",
+    "question_type": "Numerical",
+    "source_pdf": "ps1_updated",
+    "source_file": "ps1_updated.mmd",
+    "sub_questions_independent": true
+  }
+]
