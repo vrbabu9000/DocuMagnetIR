@@ -1,8 +1,8 @@
 import asyncio
 import os
 from pathlib import Path
-from syllabus_extractor import SyllabusExtractor
-from syllabus_post_process import SyllabusPostProcessor
+from main.extraction.syllabus_extractor import SyllabusExtractor
+from main.extraction.syllabus_post_process import SyllabusPostProcessor
 
 async def process_syllabus_documents():
     """

@@ -1,26 +1,26 @@
 {
   "1": {
-    "question_start": "\\section{Problem $1$ - Positional Ind",
-    "question_type": "Theory",
-    "sub_questions_independent": false
+    "question_start": "\\section{Problem $1$ - Positional I",
+    "question_type": "Short Answer",
+    "sub_questions_independent": true
   },
   "2": {
-    "question_start": "\\section{Problem $2$ - Dictionary Storag",
+    "question_start": "\\section{Problem $2$ - Dictionary Stor",
     "question_type": "Numerical",
     "sub_questions_independent": true
   },
   "3": {
-    "question_start": "\\section{Problem $3$ - Postings Compres",
+    "question_start": "\\section{Problem $3$ - Postings Compre",
     "question_type": "Numerical",
     "sub_questions_independent": true
   },
   "4": {
-    "question_start": "\\section{Problem $4$ - Tolerant Retriev",
-    "question_type": "Numerical",
+    "question_start": "\\section{Problem $4$ - Tolerant Retrie",
+    "question_type": "Short Answer",
     "sub_questions_independent": true
   },
   "5": {
-    "question_start": "\\section{Problem $5$ - Vector Space Mod",
+    "question_start": "\\section{Problem $5$ - Vector Space Mo",
     "question_type": "Numerical",
     "sub_questions_independent": true
   }

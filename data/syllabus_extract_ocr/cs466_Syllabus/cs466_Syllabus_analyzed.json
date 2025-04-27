@@ -9,8 +9,7 @@
         "Term weighting",
         "Similarity measures",
         "Probabilistic IR models",
-        "Query expansion",
-        "Relevance feedback"
+        "Relevance Feedback"
       ]
     },
     {
@@ -22,10 +21,7 @@
         "Inverted files",
         "Signature files",
         "PAT trees",
-        "Suffix arrays",
-        "Clustering algorithms",
-        "Singular Value Decomposition (SVD)",
-        "Latent Semantic Indexing (LSI)"
+        "Suffix arrays"
       ]
     },
     {
@@ -50,9 +46,21 @@
         "Web crawlers",
         "HTTP protocols",
         "Collection fusion",
-        "Metacrawler technologies",
-        "Web agent development",
-        "Collaborative filtering"
+        "Web search technologies",
+        "Metacrawler techniques"
+      ]
+    },
+    {
+      "name": "Advanced IR Topics",
+      "subtopics": [
+        "Query expansion",
+        "Thesaurus creation",
+        "Clustering algorithms",
+        "Singular Value Decomposition (SVD)",
+        "Latent Semantic Indexing (LSI)",
+        "Information visualization",
+        "Collaborative filtering",
+        "Web agents"
       ]
     },
     {
@@ -60,10 +68,7 @@
       "subtopics": [
         "Music information retrieval",
         "Image search",
-        "Information visualization",
-        "Dotplot",
-        "Texttiling",
-        "Graphical queries"
+        "Question answering systems"
       ]
     }
   ]

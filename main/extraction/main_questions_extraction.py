@@ -1,10 +1,10 @@
 import asyncio
 import os
 from pathlib import Path
-from mathpix_extractor import MathpixExtractor
-from llm_post_process import ClaudePostProcessor
-from question_bank_generator import QuestionBankGenerator
-from subquestions_post_process import SubQuestionPostProcessor
+from main.extraction.mathpix_extractor import MathpixExtractor
+from main.extraction.llm_post_process import ClaudePostProcessor
+from main.extraction.question_bank_generator import QuestionBankGenerator
+from main.extraction.subquestions_post_process import SubQuestionPostProcessor
 
 async def process_documents(run_subquestion_processing=True):
     """

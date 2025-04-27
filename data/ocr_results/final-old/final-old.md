@@ -116,8 +116,8 @@ What logical rule is learned for this concept?
 4. (9 points)
 (a) Assuming a two-dimensional vector space and the use of cosine similarity as the similarity metric, graphically illustrate why the Rocchio text categorization algorithm does not guarantee a consistent hypothesis (i.e. a hypothesis which correctly classifies all of the training examples).
 More specifically, in the following graph, draw two document vectors for category $B$. Then using the document vectors in the graph, construct the prototype vectors for both categories $A$ and $B$, which must be drawn much thicker than the document vectors. Show that at least one of the training documents would be misclassified.
-![](https://cdn.mathpix.com/cropped/2025_04_23_c31e039875609d7f6884g-08.jpg?height=855&width=1264&top_left_y=868&top_left_x=512)
-![](https://cdn.mathpix.com/cropped/2025_04_23_c31e039875609d7f6884g-08.jpg?height=251&width=675&top_left_y=1769&top_left_x=1099)
+![](https://cdn.mathpix.com/cropped/2025_04_27_c1be193d9043eaa0893dg-08.jpg?height=855&width=1264&top_left_y=868&top_left_x=512)
+![](https://cdn.mathpix.com/cropped/2025_04_27_c1be193d9043eaa0893dg-08.jpg?height=251&width=675&top_left_y=1769&top_left_x=1099)
 (b) Does the $3$ Nearest-Neighbor algorithm guarantee a consistent hypothesis (one that fits all of the training data)? Why or why not?
 5. (14 points) Assume we want to categorize computer-science documents into the following categories: Systems, Theory, AI. Consider performing naive Bayes classification with a simple model in which there is a binary feature for each significant word indicating its presence or absence in the document. The following probabilities have been estimated by analyzing a corpus of preclassified training documents.
 
