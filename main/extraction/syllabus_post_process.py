@@ -6,6 +6,7 @@ import time
 from pathlib import Path
 import anthropic
 from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
+import streamlit as st
 
 
 class SyllabusPostProcessor:
@@ -19,7 +20,7 @@ class SyllabusPostProcessor:
             model (str): Claude model to use for processing
         """
         self.root_dir = root_dir if root_dir else self._get_project_root()
-        self.api_key = api_key if api_key else os.environ.get("ANTHROPIC_API_KEY")
+        self.api_key = st.secrets["ANTHROPIC_API_KEY"]
         self.model = model
         
         # Initialize the Claude client

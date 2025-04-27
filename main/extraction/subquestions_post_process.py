@@ -8,6 +8,7 @@ import anthropic
 from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
 from anthropic.types.messages.batch_create_params import Request
 from tqdm import tqdm
+import streamlit as st
 
 
 class SubQuestionPostProcessor:
@@ -22,7 +23,7 @@ class SubQuestionPostProcessor:
             model (str): Claude model to use for processing
         """
         self.root_dir = root_dir if root_dir else self._get_project_root()
-        self.api_key = api_key if api_key else os.environ.get("ANTHROPIC_API_KEY")
+        self.api_key = st.secrets["ANTHROPIC_API_KEY"]
         self.batch_size = batch_size
         self.model = model
         

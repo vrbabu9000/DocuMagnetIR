@@ -6,6 +6,7 @@ import time
 import traceback
 from pathlib import Path
 from dotenv import load_dotenv
+import streamlit as st
 
 
 class MathpixExtractor:
@@ -27,8 +28,8 @@ class MathpixExtractor:
         load_dotenv(dotenv_path=env_path)
         
         # Get API credentials
-        self.app_id = os.environ.get("MATHPIX_APP_ID")
-        self.app_key = os.environ.get("MATHPIX_APP_KEY")
+        self.app_id = st.secrets["MATHPIX_APP_ID"]
+        self.app_key = st.secrets["MATHPIX_APP_ID"]
         
         if not self.app_key:
             raise ValueError("MATHPIX_APP_KEY environment variable not found")
