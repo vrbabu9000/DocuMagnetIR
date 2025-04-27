@@ -1,6 +1,6 @@
-# DocuMagnetIR
+# DocuMagnetIR 🧲
 
-**DocuMagnetIR** is a document extraction and question retrieval system designed for academic papers, with specialized support for mathematical notation. It extracts questions from academic PDFs, processes and tags them, and provides a powerful search interface.
+**DocuMagnetIR** 🧲 is a document extraction and question retrieval system designed for academic papers, with specialized support for mathematical notation. It extracts questions from academic PDFs, processes and tags them, and provides a powerful search interface.
 
 ## Features
 
