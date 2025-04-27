@@ -140,7 +140,7 @@ $(0,2) \quad$ Class A
 $(2,2)$ Class not-A
 $(4,4) \quad$ Class not-A
 
-| Training Data ![](https://cdn.mathpix.com/cropped/2025_04_27_396b364dca746bf81b2ag-07.jpg?height=482&width=525&top_left_y=622&top_left_x=333) <br> - A <br> $\triangle$ notA |  |  |  |  |  |
+| Training Data ![](https://cdn.mathpix.com/cropped/2025_04_27_51ea9648aac5dcc95882g-07.jpg?height=482&width=525&top_left_y=622&top_left_x=333) <br> - A <br> $\triangle$ notA |  |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |  |
 

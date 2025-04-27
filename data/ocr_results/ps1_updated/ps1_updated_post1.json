@@ -1,27 +1,27 @@
 {
   "1": {
-    "question_start": "\\section{Problem $1$ - Positional I",
+    "question_start": "\\section{Problem $1$ - Positional In",
     "question_type": "Short Answer",
-    "sub_questions_independent": true
+    "sub_questions_independent": false
   },
   "2": {
-    "question_start": "\\section{Problem $2$ - Dictionary Stor",
+    "question_start": "\\section{Problem $2$ - Dictionary Storage C",
     "question_type": "Numerical",
-    "sub_questions_independent": true
+    "sub_questions_independent": false
   },
   "3": {
-    "question_start": "\\section{Problem $3$ - Postings Compre",
+    "question_start": "\\section{Problem $3$ - Postings Compression",
     "question_type": "Numerical",
-    "sub_questions_independent": true
+    "sub_questions_independent": false
   },
   "4": {
-    "question_start": "\\section{Problem $4$ - Tolerant Retrie",
+    "question_start": "\\section{Problem $4$ - Tolerant Retrieval (",
     "question_type": "Short Answer",
-    "sub_questions_independent": true
+    "sub_questions_independent": false
   },
   "5": {
-    "question_start": "\\section{Problem $5$ - Vector Space Mo",
+    "question_start": "\\section{Problem $5$ - Vector Space Model (",
     "question_type": "Numerical",
-    "sub_questions_independent": true
+    "sub_questions_independent": false
   }
 }

@@ -15,7 +15,7 @@
     {
       "name": "Text Processing and Analysis",
       "subtopics": [
-        "Preliminary text analysis",
+        "Preliminary stages of text analysis",
         "Document processing",
         "Indexing techniques",
         "Inverted files",
@@ -46,8 +46,8 @@
         "Web crawlers",
         "HTTP protocols",
         "Collection fusion",
-        "Web search technologies",
-        "Metacrawler techniques"
+        "Metacrawler technologies",
+        "Web agent development"
       ]
     },
     {
@@ -59,8 +59,7 @@
         "Singular Value Decomposition (SVD)",
         "Latent Semantic Indexing (LSI)",
         "Information visualization",
-        "Collaborative filtering",
-        "Web agents"
+        "Collaborative filtering"
       ]
     },
     {
@@ -68,7 +67,7 @@
       "subtopics": [
         "Music information retrieval",
         "Image search",
-        "Question answering systems"
+        "Web agent case studies"
       ]
     }
   ]

@@ -31,7 +31,7 @@
   },
   "7": {
     "question_start": "\\section{$7$ Evaluation (12 pts)}",
-    "question_type": "Theory",
+    "question_type": "Short Answer",
     "sub_questions_independent": true
   },
   "8": {
@@ -46,7 +46,7 @@
   },
   "10": {
     "question_start": "\\section{$10$ Index Construction (12pts)}",
-    "question_type": "Theory",
-    "sub_questions_independent": true
+    "question_type": "Short Answer",
+    "sub_questions_independent": false
   }
 }

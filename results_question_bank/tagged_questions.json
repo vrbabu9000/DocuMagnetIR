@@ -10,12 +10,12 @@
             {
               "question_number": 3,
               "question_text": "3. (15 points) Consider examples described using the following three binary-valued features:\n\nA: $0,1$\nB: 0,1\nC: 0,1\n\nShow the trace of a perceptron learning from the training set of $[A, B, C]$ examples:\n[0,0,0]: positive\n[0,1,1]: positive\n[1,1,1]: negative\n\nAssume all of the weights and the threshold start at $0$ and the learning rate is $1$ and that during each epoch the examples are processed in the exact order given above. Show the weight vector (in the order $[\\mathrm{A}, \\mathrm{B}, \\mathrm{C}]$ ) and the threshold after every example presentation. The procedure should converge after only $4$ epochs. NOTE: For the purposes of this problem, assume that the net input must be strictly greater than the threshold in order output a $1$ (so this is slightly different from the equations in neural-net lecture slides).\n\nIf represented as a logical rule, what is the function learned?\n(a) Iteration 1:\n\\begin{tabular}{|l|l|l|l|l|l|}\n\\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\\\\n\\hline [0,0,0] & & & & & \\\\\n\\hline [0,1,1] & & & & & \\\\\n\\hline [1,1,1] & & & & & \\\\\n\\hline\n\\end{tabular}\n(b) Iteration 2:\n\\begin{tabular}{|l|l|l|l|l|l|}\n\\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\\\\n\\hline [ $0,0,0$ ] & & & & & \\\\\n\\hline [0,1,1] & & & & & \\\\\n\\hline [1,1,1] & & & & & \\\\\n\\hline\n\\end{tabular}\n(c) Iteration 3:\n\\begin{tabular}{|l|l|l|l|l|l|}\n\\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\\\\n\\hline [0,0,0] & & & & & \\\\\n\\hline [0,1,1] & & & & & \\\\\n\\hline [1,1,1] & & & & & \\\\\n\\hline\n\\end{tabular}\n(d) Iteration 4:\n\\begin{tabular}{|l|l|l|l|l|l|}\n\\hline Example & Classification (right/wrong) & W(A) & W(B) & W(C) & Threshold \\\\\n\\hline [ $0,0,0$ ] & & & & & \\\\\n\\hline [0,1,1] & & & & & \\\\\n\\hline [1,1,1] & & & & & \\\\\n\\hline\n\\end{tabular}\n\nWhat logical rule is learned for this concept?",
-              "question_type": "Theory",
+              "question_type": "Numerical",
               "all_tags": [
                 {
                   "main_topic": "Information Retrieval Models",
                   "subtopic": "Boolean IR models",
-                  "similarity_score": 0.27867597341537476
+                  "similarity_score": 0.26936742663383484
                 }
               ],
               "source_file": "final-old.mmd"
@@ -65,6 +65,16 @@
                   "main_topic": "Information Retrieval Models",
                   "subtopic": "Boolean IR models",
                   "similarity_score": 0.4800054132938385
+                },
+                {
+                  "main_topic": "Information Retrieval Models",
+                  "subtopic": "Probabilistic IR models",
+                  "similarity_score": 0.44501426815986633
+                },
+                {
+                  "main_topic": "Information Retrieval Models",
+                  "subtopic": "Vector-based IR models",
+                  "similarity_score": 0.4435197412967682
                 }
               ],
               "source_file": "final_exam.mmd"
@@ -78,6 +88,11 @@
                   "main_topic": "Information Retrieval Models",
                   "subtopic": "Boolean IR models",
                   "similarity_score": 0.4001436233520508
+                },
+                {
+                  "main_topic": "Information Retrieval Models",
+                  "subtopic": "Relevance Feedback",
+                  "similarity_score": 0.3690283000469208
                 }
               ],
               "source_file": "final_exam.mmd"
@@ -87,19 +102,6 @@
         {
           "name": "Vector-based IR models",
           "questions": [
-            {
-              "question_number": 4,
-              "question_text": "4. (9 points)\n(a) Assuming a two-dimensional vector space and the use of cosine similarity as the similarity metric, graphically illustrate why the Rocchio text categorization algorithm does not guarantee a consistent hypothesis (i.e. a hypothesis which correctly classifies all of the training examples).\nMore specifically, in the following graph, draw two document vectors for category $B$. Then using the document vectors in the graph, construct the prototype vectors for both categories $A$ and $B$, which must be drawn much thicker than the document vectors. Show that at least one of the training documents would be misclassified.\n![](https://cdn.mathpix.com/cropped/2025_04_27_c1be193d9043eaa0893dg-08.jpg?height=855&width=1264&top_left_y=868&top_left_x=512)\n![](https://cdn.mathpix.com/cropped/2025_04_27_c1be193d9043eaa0893dg-08.jpg?height=251&width=675&top_left_y=1769&top_left_x=1099)\n(b) Does the $3$ Nearest-Neighbor algorithm guarantee a consistent hypothesis (one that fits all of the training data)? Why or why not?",
-              "question_type": "Theory",
-              "all_tags": [
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Vector-based IR models",
-                  "similarity_score": 0.33892127871513367
-                }
-              ],
-              "source_file": "final-old.mmd"
-            },
             {
               "question_number": 8,
               "question_text": "\\section{$8$ Vector Space Models (8 pts)}\n\nConsider the following retrieval scheme:\nEg. for a query rising interest rates\n- Run the query as a phrase query\n- If $<K$ docs contain the phrase rising interest rates, run two phrase queries rising interest and interest rates\n- If we still have $<K$ docs, run the vector space query rising interest rates. Rank matching docs by vector space scoring\n\nConsider the following set of documents:\nD1: Do you like green eggs and ham\nD2 : I do not like them Sam I am\nD3 : I do not like green eggs and ham\nD4 : I do not like eggs\nD5: Why are they green\nLet the query be green eggs and suppose we eventually want to show the user $4$ documents. That is, $K=4$.\n1. [2pts] Run the phrase query green eggs. What are the documents that get retrieved in this step ?\n2. [2pts] What are the scores of the documents you retrieved in part (1) for the phrase query using cosine similarity on a bigram vector space ?\n3. [4pts] If you did not have K documents in the first step, continue scoring according to the technique. What are the final $4$ documents that you return and their scores)?\n",
@@ -152,6 +154,29 @@
               "source_file": "final_exam.mmd"
             },
             {
+              "question_number": 3,
+              "question_text": "\\section{$3$ Short Answers $2$ (10 pts)}\n1. [1pt] What is the largest number that can be stored in $4$ bytes using unary encoding?\n2. [2pts] Many systems, e.g., Lucene, provide a separate function to index a set of documents in bulk, instead of just one document? What do you think is an advantage of such a function?\n3. [3pts] Assume that postings lists are gap encoded using $\\gamma$ codes. Using this encoding, suppose that the postings list for the term information is the bit sequence:\n$111111111011110011010011111000000$\nand the postings list for the term retrieval is the bit sequence:\n$1111111111000000001110111101111$\nWhat docids match the following query:\ninformation AND NOT retrieval\n4. [4pts] Suppose the vocabulary for your inverted index consists of the following $6$ terms:\nelite\nelope\nellipse\neloquent\neligible\nelongate\nAssume that the dictionary data structure used for this index stores the actual terms using dictionary-as-a-string storage with front coding and a block size of $3$. Show the resulting storage of the above vocabulary of $6$ terms. Use the special symbols $*$ and $\\diamond$ as used in the discussion on front coding in Chapter $5$.\n",
+              "question_type": "Short Answer",
+              "all_tags": [
+                {
+                  "main_topic": "Information Retrieval Models",
+                  "subtopic": "Term weighting",
+                  "similarity_score": 0.456547349691391
+                },
+                {
+                  "main_topic": "Information Retrieval Models",
+                  "subtopic": "Similarity measures",
+                  "similarity_score": 0.4316788911819458
+                },
+                {
+                  "main_topic": "Information Retrieval Models",
+                  "subtopic": "Boolean IR models",
+                  "similarity_score": 0.4315134584903717
+                }
+              ],
+              "source_file": "final_exam.mmd"
+            },
+            {
               "question_number": 1,
               "question_text": "1. (13 points) Assume that simple term frequency weights are used (no IDF factor), and the only stopwords are: \"is\", \"am\" and \"are\". Compute the cosine similarity of the following two simple documents:\n(a) \"precision is very very high\"\n(b) \"high precision is very very very important\"",
               "question_type": "Numerical",
@@ -165,6 +190,24 @@
                   "main_topic": "Information Retrieval Models",
                   "subtopic": "Similarity measures",
                   "similarity_score": 0.4434681832790375
+                }
+              ],
+              "source_file": "midterm-old.mmd"
+            },
+            {
+              "question_number": 7,
+              "question_text": "7. (21 points) Provide short answers (1-3 sentences) for each of the following questions:\n\nWhat are two aspects of the web that make web search fundamentally different from earlier, traditional IR?\n\nIn the vector-space model, why is it not necessary to normalize term frequencies when the resulting document vectors are only used for computing cosine similarity?\n\nBut why is it necessary to normalize term frequencies when the resulting document vectors are used for standard vector-space relevance-feedback methods?\n\nWhat is the functional role (i.e. purpose) of the IDF factor in standard term weighting?\n\nHow does stemming typically affect recall? Why?\n\nWhy does thesaurus-based query expansion typically not work very well?\n\nOn what type of plot does a power law result in a straight line? What is the slope of the line (in terms of the parameters of the power law, $y=k x^{c}$ )?\n(Extra credit) Who is the Nobel and Turing award winning founding father of AI who first explored the \"rich get richer\" explanation for Zipf's law?\n(Extra credit) What company successfully sued another company for violating the restrictions in their robots.txt file?",
+              "question_type": "Short Answer",
+              "all_tags": [
+                {
+                  "main_topic": "Information Retrieval Models",
+                  "subtopic": "Term weighting",
+                  "similarity_score": 0.6216561198234558
+                },
+                {
+                  "main_topic": "Information Retrieval Models",
+                  "subtopic": "Vector-based IR models",
+                  "similarity_score": 0.5370662212371826
                 }
               ],
               "source_file": "midterm-old.mmd"
@@ -222,93 +265,6 @@
                 }
               ],
               "source_file": "final_exam.mmd"
-            },
-            {
-              "question_number": "7.2",
-              "question_text": "In the vector-space model, why is it not necessary to normalize term frequencies when the resulting document vectors are only used for computing cosine similarity?",
-              "question_type": "Short Answer",
-              "all_tags": [
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Term weighting",
-                  "similarity_score": 0.35211634635925293
-                },
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Vector-based IR models",
-                  "similarity_score": 0.34424638748168945
-                },
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Similarity measures",
-                  "similarity_score": 0.3287545144557953
-                }
-              ],
-              "source_file": "midterm-old.mmd"
-            },
-            {
-              "question_number": "7.3",
-              "question_text": "But why is it necessary to normalize term frequencies when the resulting document vectors are used for standard vector-space relevance-feedback methods?",
-              "question_type": "Short Answer",
-              "all_tags": [
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Term weighting",
-                  "similarity_score": 0.45784062147140503
-                },
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Vector-based IR models",
-                  "similarity_score": 0.452299028635025
-                },
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Relevance Feedback",
-                  "similarity_score": 0.4107990562915802
-                }
-              ],
-              "source_file": "midterm-old.mmd"
-            },
-            {
-              "question_number": "7.4",
-              "question_text": "What is the functional role (i.e. purpose) of the IDF factor in standard term weighting?",
-              "question_type": "Short Answer",
-              "all_tags": [
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Term weighting",
-                  "similarity_score": 0.4941025376319885
-                },
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Vector-based IR models",
-                  "similarity_score": 0.27284467220306396
-                },
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Similarity measures",
-                  "similarity_score": 0.26274242997169495
-                }
-              ],
-              "source_file": "midterm-old.mmd"
-            },
-            {
-              "question_number": "7.5",
-              "question_text": "How does stemming typically affect recall? Why?",
-              "question_type": "Short Answer",
-              "all_tags": [
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Term weighting",
-                  "similarity_score": 0.371089905500412
-                },
-                {
-                  "main_topic": "Information Retrieval Models",
-                  "subtopic": "Similarity measures",
-                  "similarity_score": 0.31434166431427
-                }
-              ],
-              "source_file": "midterm-old.mmd"
             }
           ]
         },
@@ -405,22 +361,22 @@
             {
               "question_number": 7,
               "question_text": "\\section{$7$ Evaluation (12 pts)}\n1. [2pts] In the class, we discussed several ways to evaluate ranking systems, for e.g., precision, recall, NDCG etc. However, for all these metrics, we need the relevance values for the results. Two possible methods to collect relevance values, as mentioned in class, are: a) click feedback from users, b) expert judgements (like what we did for the search ratings task for PA3). Write one advantage and one disadvantage of each of these methods.\na) Click feedback:\nb) Expert judgments:\n2. [1pt] An alternative method to evaluate ranking systems is to do a pairwise comparison of two ranking systems instead of evaluating an individual system, i.e. if you have two ranking systems A and B, instead of evaluating them independently, you can perform the same query on both systems and compare the results. Write why this might give better results than evaluating individual systems independently.\n3. [3pts] One such method, which uses click feedback to compare two ranking systems, is balanced interleaving. Given a query $q$, it combines the results, $A=\\left(a_{1}, a_{2}, \\ldots\\right)$ of the first system and $B=\\left(b_{1}, b_{2}, \\ldots\\right)$ of the second system, into one consolidated ranking, $I$ as shown in Algorithm 1. Note that this is a simple merge algorithm which breaks ties using a random coin toss (done once at the beginning).\n```\nAlgorithm $1$ Balanced Interleaving\nInput: Rankings $A=(a 1 ; a 2 ; \\ldots)$ and $B=(b 1 ; b 2 ; \\ldots)$\n$I:=() ; / / o u t p u t$ ranking list, initialized to empty list\n$k_{a}:=1 ; k_{b}:=1 ; / /$ counters for the lists A and B , respectively\nAFirst $:=$ randomly select $0$ or $1 / /$ decide which ranking gets priority\nwhile $\\left(k_{a}<=|A|\\right.$ and $\\left.k_{b}<=|B|\\right)$ do //if not at end of A or B\n    if $\\left(k_{a}<k_{b}\\right.$ or $\\left(k_{a}==k_{b}\\right.$ and AFirst $\\left.\\left.==1\\right)\\right)$ then\n        if $A\\left[k_{a}\\right] \\notin I$ then $I$.append $\\left(A\\left[k_{a}\\right]\\right) / /$ append a result from A\n        $k_{a}:=k_{a}+1$\n    else\n        if $B\\left[k_{b}\\right] \\notin I$ then $I$.append $\\left(B\\left[k_{b}\\right]\\right) / /$ append a result from B\n        $k_{b}:=k_{b}+1$\n    end if\nend while\nOutput: Interleaved ranking $I=\\left(i_{1} ; i_{2} ; \\ldots\\right)$\n```\n\n\\section{If the two input ranking lists are:}\n\nA: (a; b; c; d; g; h)\nB: (b; e; a; f; g; h)\nwhat is the output ranking $I$ (if A wins the toss, i.e., AFirst $=1$ )?\n4. [3pts] When the user enters a query $q$ in the search engine, the back end merges the results of the two systems A and B using Algorithm 1, and the user is presented with the output list $I$. The user then clicks on one or more of the results, and these clicks are used to figure out which ranking, A or B , is preferred by the user.\n\nFormally, let $\\left(c_{1} ; c_{2} ; \\ldots\\right)$ be the ranks of the clicks w.r.t. $I$ and $c_{\\max }$ be the rank of the lowest clicked link, (with $i_{\\text {cmax }}$ being the corresponding result in list $I$ ), i.e., if the user clicks on the $1^{s t}, 3^{r d}$ and $7^{\\text {th }} \\operatorname{link}, c_{\\max }=7$. Let, $k=\\min \\left\\{j:\\left(i_{c \\max }=a_{j}\\right) \\vee\\left(i_{c \\max }=b_{j}\\right)\\right\\}$; we find how many clicked results occur in the top $k$ results for each list.\n\nFor example, if the lowest link clicked by the user on $I$ corresponds to the $5^{t h}$ result in A and $7^{\\text {th }}$ result in B , then $\\mathrm{k}=5$ and we'll look at the number of clicked results present in the top $5$ results of A and B . To derive a preference between A and B , we simply compare the number of clicks in the top $k$ results of $A$ and $B$, i.e., if more results from $A$ are clicked, then $A$ is preferred.\n\nIn the example lists given in part $3$ above, which system, $A$ or $B$, is preferred if the user clicks on the $1^{\\text {st }}$ and $4^{\\text {th }}$ link in the output $I$ ? Explain your answer.\n5. [3pts] Now, consider a bot which clicks on the results presented by the search engine uniformly at random, i.e., each link is equally likely to be clicked by the bot. Write an example of input lists $\\mathrm{A}, \\mathrm{B}$ so that such a random clicker generates a strict preference for one of the lists in expectation. Is this a problem? Why or why not?\n",
-              "question_type": "Theory",
+              "question_type": "Short Answer",
               "all_tags": [
                 {
                   "main_topic": "Information Retrieval Models",
                   "subtopic": "Relevance Feedback",
-                  "similarity_score": 0.6036386489868164
+                  "similarity_score": 0.58527010679245
                 },
                 {
                   "main_topic": "Information Retrieval Models",
                   "subtopic": "Similarity measures",
-                  "similarity_score": 0.5154795050621033
+                  "similarity_score": 0.5053425431251526
                 },
                 {
                   "main_topic": "Information Retrieval Models",
                   "subtopic": "Term weighting",
-                  "similarity_score": 0.5012942552566528
+                  "similarity_score": 0.4898786246776581
                 }
               ],
               "source_file": "final_exam.mmd"
@@ -499,7 +455,7 @@
                 {
                   "main_topic": "Text Processing and Analysis",
                   "subtopic": "PAT trees",
-                  "similarity_score": 0.4198254942893982
+                  "similarity_score": 0.4198254346847534
                 }
               ],
               "source_file": "final-old.mmd"
@@ -521,6 +477,19 @@
                 }
               ],
               "source_file": "ps1_updated.mmd"
+            },
+            {
+              "question_number": "1.2",
+              "question_text": "2. Using positional postings lists, we can determine the width of the smallest window in a document containing all query terms in time linear in the lengths of the postings lists of the query terms & \\\\\n\\hline",
+              "question_type": "True/False",
+              "all_tags": [
+                {
+                  "main_topic": "Text Processing and Analysis",
+                  "subtopic": "Document processing",
+                  "similarity_score": 0.3107339143753052
+                }
+              ],
+              "source_file": "final_exam.mmd"
             },
             {
               "question_number": "1.7",
@@ -557,8 +526,8 @@
                 },
                 {
                   "main_topic": "Text Processing and Analysis",
-                  "subtopic": "Preliminary text analysis",
-                  "similarity_score": 0.2304021269083023
+                  "subtopic": "Suffix arrays",
+                  "similarity_score": 0.21951019763946533
                 }
               ],
               "source_file": "final_exam.mmd"
@@ -584,22 +553,22 @@
             {
               "question_number": 10,
               "question_text": "\\section{$10$ Index Construction (12pts)}\n\nConsider constructing a nonpositional index. Due to hardware constraints and the nature of each document collection, several indexing algorithms have been proposed, e.g., the blocked sort-based indexing (BSBI) algorithm, the single-pass in-memory indexing (SPIMI) algorithm, and dynamic indexing. In this exam question, we will test your understanding of various indexing algorithms.\n1. Briefly answer in one sentence each of the below questions:\n(a) [1pt] What hardware constraint does BSBI address?\n(b) [1pt] What is the advantage of using termIDs instead of terms in BSBI?\n(c) [1pt] What limitation of BSBI does SPIMI address?\n(d) [1pt] When do we need to use dynamic indexing?\n2. [3pts] In the text book (IIR Figure 4.4), only part of the SPIMI algorithm, the inversion procedure for each block, is described, not the entire algorithm.\n\nYour task is to complete the SPIMI algorithm (in no more than $10$ lines of code), similar to the BSBI algorithm as detailed in IIR Figure $4.2$ or below.\n```\nBSBINDEXCONSTRUCTION()\n    $n \\leftarrow 0$\n    while (all documents have not been processed)\n    do $n \\leftarrow n+1$\n        block $\\leftarrow$ ParsenextBlock ()\n        BSBI-INVERT(block)\n        WriteBlockToDisk (block, $f_{n}$ )\n    $\\operatorname{MergeBLocks}\\left(f_{1}, \\ldots, f_{n} ; f_{\\text {merged }}\\right)$\n```\n\nFor your convenience, you can:\n- Call the function SPIMI-Invert(token_stream)\n- Call any functions used in the BSBIndexConstruction algorithm above.\n- View all documents in a collection as a single token_stream given by the function Get-Collection-Stream().\n- Query the method Has_Next(token_stream) which will return False if the end of the collection has been reached.\n3. [5pts] Now, apply the SPIMI algorithm to the following collection:\nd1: bsbi use term id\nd2: sort term id doc id\nd3: spimi use term\nd4: no term id sort\nAssume that main memory can only hold two documents at a time, i.e., the SPIMI algorithm will write to disk each time after two documents, a block, have been processed.\n\nWrite out the content of each block just before merging and the result after merging in the following format:\n\nBlock 1:\nbsbi $\\rightarrow 1$\nterm $\\rightarrow 1,2$",
-              "question_type": "Theory",
+              "question_type": "Short Answer",
               "all_tags": [
                 {
                   "main_topic": "Text Processing and Analysis",
                   "subtopic": "Indexing techniques",
-                  "similarity_score": 0.4721003770828247
+                  "similarity_score": 0.4875682294368744
                 },
                 {
                   "main_topic": "Text Processing and Analysis",
                   "subtopic": "Suffix arrays",
-                  "similarity_score": 0.416717529296875
+                  "similarity_score": 0.4378184378147125
                 },
                 {
                   "main_topic": "Text Processing and Analysis",
                   "subtopic": "Document processing",
-                  "similarity_score": 0.36307716369628906
+                  "similarity_score": 0.3732949495315552
                 }
               ],
               "source_file": "final_exam.mmd"
@@ -613,6 +582,11 @@
                   "main_topic": "Text Processing and Analysis",
                   "subtopic": "Indexing techniques",
                   "similarity_score": 0.44991961121559143
+                },
+                {
+                  "main_topic": "Text Processing and Analysis",
+                  "subtopic": "Document processing",
+                  "similarity_score": 0.399784117937088
                 }
               ],
               "source_file": "ps1_updated.mmd"
@@ -694,26 +668,21 @@
       "name": "Information Extraction and Classification",
       "subtopics": [
         {
-          "name": "Authorship identification",
+          "name": "Text classification",
           "questions": [
             {
-              "question_number": "7.8",
-              "question_text": "(Extra credit) Who is the Nobel and Turing award winning founding father of AI who first explored the \"rich get richer\" explanation for Zipf's law?",
-              "question_type": "Short Answer",
+              "question_number": 4,
+              "question_text": "4. (9 points)\n(a) Assuming a two-dimensional vector space and the use of cosine similarity as the similarity metric, graphically illustrate why the Rocchio text categorization algorithm does not guarantee a consistent hypothesis (i.e. a hypothesis which correctly classifies all of the training examples).\nMore specifically, in the following graph, draw two document vectors for category $B$. Then using the document vectors in the graph, construct the prototype vectors for both categories $A$ and $B$, which must be drawn much thicker than the document vectors. Show that at least one of the training documents would be misclassified.\n![](https://cdn.mathpix.com/cropped/2025_04_27_41e96f25aa79d1f12887g-08.jpg?height=855&width=1264&top_left_y=868&top_left_x=512)\n![](https://cdn.mathpix.com/cropped/2025_04_27_41e96f25aa79d1f12887g-08.jpg?height=251&width=675&top_left_y=1769&top_left_x=1099)\n(b) Does the $3$ Nearest-Neighbor algorithm guarantee a consistent hypothesis (one that fits all of the training data)? Why or why not?",
+              "question_type": "Theory",
               "all_tags": [
                 {
                   "main_topic": "Information Extraction and Classification",
-                  "subtopic": "Authorship identification",
-                  "similarity_score": 0.23818695545196533
+                  "subtopic": "Text classification",
+                  "similarity_score": 0.350624144077301
                 }
               ],
-              "source_file": "midterm-old.mmd"
-            }
-          ]
-        },
-        {
-          "name": "Text classification",
-          "questions": [
+              "source_file": "final-old.mmd"
+            },
             {
               "question_number": "1.17",
               "question_text": "17. Adding training data always results in a monotonic increase in the accuracy of a Naive Bayes classifier & \\\\\n\\hline",
@@ -799,24 +768,6 @@
       "name": "Web Information Retrieval",
       "subtopics": [
         {
-          "name": "Web robots",
-          "questions": [
-            {
-              "question_number": "7.9",
-              "question_text": "(Extra credit) What company successfully sued another company for violating the restrictions in their robots.txt file?",
-              "question_type": "Short Answer",
-              "all_tags": [
-                {
-                  "main_topic": "Web Information Retrieval",
-                  "subtopic": "Web robots",
-                  "similarity_score": 0.3493192493915558
-                }
-              ],
-              "source_file": "midterm-old.mmd"
-            }
-          ]
-        },
-        {
           "name": "Web crawlers",
           "questions": [
             {
@@ -840,17 +791,12 @@
                 {
                   "main_topic": "Web Information Retrieval",
                   "subtopic": "Web crawlers",
-                  "similarity_score": 0.39014145731925964
+                  "similarity_score": 0.39014139771461487
                 },
                 {
                   "main_topic": "Web Information Retrieval",
                   "subtopic": "HTTP protocols",
-                  "similarity_score": 0.33555683493614197
-                },
-                {
-                  "main_topic": "Web Information Retrieval",
-                  "subtopic": "Web search technologies",
-                  "similarity_score": 0.3268434703350067
+                  "similarity_score": 0.3355567753314972
                 }
               ],
               "source_file": "midterm-old.mmd"
@@ -863,38 +809,7 @@
                 {
                   "main_topic": "Web Information Retrieval",
                   "subtopic": "Web crawlers",
-                  "similarity_score": 0.3493860960006714
-                }
-              ],
-              "source_file": "midterm-old.mmd"
-            }
-          ]
-        },
-        {
-          "name": "Web search technologies",
-          "questions": [
-            {
-              "question_number": "1.2",
-              "question_text": "2. Using positional postings lists, we can determine the width of the smallest window in a document containing all query terms in time linear in the lengths of the postings lists of the query terms & \\\\\n\\hline",
-              "question_type": "True/False",
-              "all_tags": [
-                {
-                  "main_topic": "Web Information Retrieval",
-                  "subtopic": "Web search technologies",
-                  "similarity_score": 0.3318982720375061
-                }
-              ],
-              "source_file": "final_exam.mmd"
-            },
-            {
-              "question_number": "7.1",
-              "question_text": "What are two aspects of the web that make web search fundamentally different from earlier, traditional IR?",
-              "question_type": "Short Answer",
-              "all_tags": [
-                {
-                  "main_topic": "Web Information Retrieval",
-                  "subtopic": "Web search technologies",
-                  "similarity_score": 0.5373884439468384
+                  "similarity_score": 0.3493860363960266
                 }
               ],
               "source_file": "midterm-old.mmd"
@@ -917,7 +832,7 @@
                 {
                   "main_topic": "Advanced IR Topics",
                   "subtopic": "Query expansion",
-                  "similarity_score": 0.4806326925754547
+                  "similarity_score": 0.4806327521800995
                 }
               ],
               "source_file": "final_exam.mmd"
@@ -930,33 +845,10 @@
                 {
                   "main_topic": "Advanced IR Topics",
                   "subtopic": "Query expansion",
-                  "similarity_score": 0.31607162952423096
+                  "similarity_score": 0.31607165932655334
                 }
               ],
               "source_file": "final_exam.mmd"
-            }
-          ]
-        },
-        {
-          "name": "Thesaurus creation",
-          "questions": [
-            {
-              "question_number": "7.6",
-              "question_text": "Why does thesaurus-based query expansion typically not work very well?",
-              "question_type": "Short Answer",
-              "all_tags": [
-                {
-                  "main_topic": "Advanced IR Topics",
-                  "subtopic": "Thesaurus creation",
-                  "similarity_score": 0.5614388585090637
-                },
-                {
-                  "main_topic": "Advanced IR Topics",
-                  "subtopic": "Query expansion",
-                  "similarity_score": 0.5070095062255859
-                }
-              ],
-              "source_file": "midterm-old.mmd"
             }
           ]
         },
@@ -997,7 +889,7 @@
                 {
                   "main_topic": "Advanced IR Topics",
                   "subtopic": "Clustering algorithms",
-                  "similarity_score": 0.3328562378883362
+                  "similarity_score": 0.33285626769065857
                 }
               ],
               "source_file": "final_exam.mmd"
@@ -1010,7 +902,7 @@
                 {
                   "main_topic": "Advanced IR Topics",
                   "subtopic": "Clustering algorithms",
-                  "similarity_score": 0.2623526155948639
+                  "similarity_score": 0.26235267519950867
                 }
               ],
               "source_file": "final_exam.mmd"
@@ -1022,13 +914,13 @@
           "questions": [
             {
               "question_number": 6,
-              "question_text": "\\section{$6$ SVM (10 pts)}\n\nWe are training an SVM classifier on this small training data set of $4$ points:\n$(2,0) \\quad$ Class A\n$(0,2) \\quad$ Class A\n$(2,2)$ Class not-A\n$(4,4) \\quad$ Class not-A\n\\begin{tabular}{|l|l|l|l|l|l|}\n\\hline \\multicolumn{6}{|c|}{\\multirow{2}{*}{\\begin{tabular}{l}\nTraining Data\n![](https://cdn.mathpix.com/cropped/2025_04_27_396b364dca746bf81b2ag-07.jpg?height=482\\&width=525\\&top_left_y=622\\&top_left_x=333) \\\\\n- A \\\\\n$\\triangle$ notA\n\\end{tabular}}} \\\\\n\\hline & & & & & \\\\\n\\hline\n\\end{tabular}\n\nLet the class A correspond to $y_{i}=+1$.\n1. [1pt] Is this data linearly separable?\n2. [1pt] What is the (geometric) margin for a hard-margin SVM on this data?\n3. [2pts] Write an equation for the optimal separating hyperplane for a hard-margin SVM trained on this data. Work out the answer geometrically, based on the data points above.\n4. [1pt] What is the SVM decision function (giving the class assignment)?\n5. [2pts] For the algebraic formulation, we impose the standard constraint that $\\mathbf{w}^{T} \\mathbf{x}_{i}+b \\geq 1$ if $y_{i}=1$ and $\\mathbf{w}^{T} \\mathbf{x}_{i}+b \\leq-1$ if $y_{i}=-1$, and then proceed to minimize $\\|w\\|$. What weight vector $\\mathbf{w}$ and corresponding $b$ achieves this?\n6. [1pt] What is the name of the quantity calculated by $2 /\\|\\mathbf{w}\\|$ and what is its value here?\n7. [2pts] Consider now a soft-margin SVM, where the value of $C$ is not too high, so that one but only one point will be moved with a slack variable, as far as needed to maximize the margin (concretely, $C=0.1$ will achieve this effect given this data, but you don't need to use this value to answer the question). What will the SVM decision function be now, and what is the margin?\n",
+              "question_text": "\\section{$6$ SVM (10 pts)}\n\nWe are training an SVM classifier on this small training data set of $4$ points:\n$(2,0) \\quad$ Class A\n$(0,2) \\quad$ Class A\n$(2,2)$ Class not-A\n$(4,4) \\quad$ Class not-A\n\\begin{tabular}{|l|l|l|l|l|l|}\n\\hline \\multicolumn{6}{|c|}{\\multirow{2}{*}{\\begin{tabular}{l}\nTraining Data\n![](https://cdn.mathpix.com/cropped/2025_04_27_51ea9648aac5dcc95882g-07.jpg?height=482\\&width=525\\&top_left_y=622\\&top_left_x=333) \\\\\n- A \\\\\n$\\triangle$ notA\n\\end{tabular}}} \\\\\n\\hline & & & & & \\\\\n\\hline\n\\end{tabular}\n\nLet the class A correspond to $y_{i}=+1$.\n1. [1pt] Is this data linearly separable?\n2. [1pt] What is the (geometric) margin for a hard-margin SVM on this data?\n3. [2pts] Write an equation for the optimal separating hyperplane for a hard-margin SVM trained on this data. Work out the answer geometrically, based on the data points above.\n4. [1pt] What is the SVM decision function (giving the class assignment)?\n5. [2pts] For the algebraic formulation, we impose the standard constraint that $\\mathbf{w}^{T} \\mathbf{x}_{i}+b \\geq 1$ if $y_{i}=1$ and $\\mathbf{w}^{T} \\mathbf{x}_{i}+b \\leq-1$ if $y_{i}=-1$, and then proceed to minimize $\\|w\\|$. What weight vector $\\mathbf{w}$ and corresponding $b$ achieves this?\n6. [1pt] What is the name of the quantity calculated by $2 /\\|\\mathbf{w}\\|$ and what is its value here?\n7. [2pts] Consider now a soft-margin SVM, where the value of $C$ is not too high, so that one but only one point will be moved with a slack variable, as far as needed to maximize the margin (concretely, $C=0.1$ will achieve this effect given this data, but you don't need to use this value to answer the question). What will the SVM decision function be now, and what is the margin?\n",
               "question_type": "Numerical",
               "all_tags": [
                 {
                   "main_topic": "Advanced IR Topics",
                   "subtopic": "Singular Value Decomposition (SVD)",
-                  "similarity_score": 0.29965296387672424
+                  "similarity_score": 0.3001033365726471
                 }
               ],
               "source_file": "final_exam.mmd"
@@ -1046,7 +938,7 @@
                 {
                   "main_topic": "Advanced IR Topics",
                   "subtopic": "Clustering algorithms",
-                  "similarity_score": 0.3606126010417938
+                  "similarity_score": 0.36061254143714905
                 }
               ],
               "source_file": "final_exam.mmd"
@@ -1124,24 +1016,6 @@
           ]
         },
         {
-          "name": "Information visualization",
-          "questions": [
-            {
-              "question_number": "7.7",
-              "question_text": "On what type of plot does a power law result in a straight line? What is the slope of the line (in terms of the parameters of the power law, $y=k x^{c}$ )?",
-              "question_type": "Short Answer",
-              "all_tags": [
-                {
-                  "main_topic": "Advanced IR Topics",
-                  "subtopic": "Information visualization",
-                  "similarity_score": 0.070073202252388
-                }
-              ],
-              "source_file": "midterm-old.mmd"
-            }
-          ]
-        },
-        {
           "name": "Collaborative filtering",
           "questions": [
             {
@@ -1156,29 +1030,6 @@
                 }
               ],
               "source_file": "final-old.mmd"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Specialized Information Retrieval",
-      "subtopics": [
-        {
-          "name": "Question answering systems",
-          "questions": [
-            {
-              "question_number": 3,
-              "question_text": "\\section{$3$ Short Answers $2$ (10 pts)}\n1. [1pt] What is the largest number that can be stored in $4$ bytes using unary encoding?\n2. [2pts] Many systems, e.g., Lucene, provide a separate function to index a set of documents in bulk, instead of just one document? What do you think is an advantage of such a function?\n3. [3pts] Assume that postings lists are gap encoded using $\\gamma$ codes. Using this encoding, suppose that the postings list for the term information is the bit sequence:\n$111111111011110011010011111000000$\nand the postings list for the term retrieval is the bit sequence:\n$1111111111000000001110111101111$\nWhat docids match the following query:\ninformation AND NOT retrieval\n4. [4pts] Suppose the vocabulary for your inverted index consists of the following $6$ terms:\nelite\nelope\nellipse\neloquent\neligible\nelongate\nAssume that the dictionary data structure used for this index stores the actual terms using dictionary-as-a-string storage with front coding and a block size of $3$. Show the resulting storage of the above vocabulary of $6$ terms. Use the special symbols $*$ and $\\diamond$ as used in the discussion on front coding in Chapter $5$.\n",
-              "question_type": "Short Answer",
-              "all_tags": [
-                {
-                  "main_topic": "Specialized Information Retrieval",
-                  "subtopic": "Question answering systems",
-                  "similarity_score": 0.4663093090057373
-                }
-              ],
-              "source_file": "final_exam.mmd"
             }
           ]
         }

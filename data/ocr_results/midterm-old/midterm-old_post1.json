@@ -7,12 +7,12 @@
   "2": {
     "question_start": "2. (14 points) Assume that an IR sys",
     "question_type": "Numerical",
-    "sub_questions_independent": false
+    "sub_questions_independent": true
   },
   "3": {
-    "question_start": "3. (11 points) Assume in response t",
+    "question_start": "3. (11 points) Assume in response to",
     "question_type": "Numerical",
-    "sub_questions_independent": null
+    "sub_questions_independent": true
   },
   "4": {
     "question_start": "4. (12 points) Assuming Zipf's law w",
@@ -20,17 +20,17 @@
     "sub_questions_independent": null
   },
   "5": {
-    "question_start": "5. (11 points) Consider the followi",
+    "question_start": "5. (11 points) Consider the followin",
     "question_type": "Theory",
     "sub_questions_independent": null
   },
   "6": {
-    "question_start": "6. (18 points) Consider the followi",
+    "question_start": "6. (18 points) Consider the followin",
     "question_type": "Numerical",
-    "sub_questions_independent": false
+    "sub_questions_independent": true
   },
   "7": {
-    "question_start": "7. (21 points) Provide short answer",
+    "question_start": "7. (21 points) Provide short answers",
     "question_type": "Short Answer",
     "sub_questions_independent": true
   }
