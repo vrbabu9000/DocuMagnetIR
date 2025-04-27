@@ -29,7 +29,7 @@ class MathpixExtractor:
         
         # Get API credentials
         self.app_id = st.secrets["MATHPIX_APP_ID"]
-        self.app_key = st.secrets["MATHPIX_APP_ID"]
+        self.app_key = st.secrets["MATHPIX_APP_KEY"]
         
         if not self.app_key:
             raise ValueError("MATHPIX_APP_KEY environment variable not found")
