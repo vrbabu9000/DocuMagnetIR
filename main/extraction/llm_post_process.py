@@ -150,7 +150,7 @@ class ClaudePostProcessor:
             message = self.client.messages.create(
                 model=self.model,
                 max_tokens=8192,
-                temperature=1,
+                temperature=0.2,
                 messages=[
                     {
                         "role": "user",
