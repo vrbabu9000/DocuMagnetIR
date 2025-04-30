@@ -1,0 +1,87 @@
+{
+  "1": {
+    "question_start": "1. (10 points) For A* sear",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "2": {
+    "question_start": "2. (5 points) Convert the follo",
+    "question_type": "Theory",
+    "sub_questions_independent": false
+  },
+  "3": {
+    "question_start": "3. (5 points) Convert all rules",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "4": {
+    "question_start": "4. (5 points) Carry out a resol",
+    "question_type": "Proof",
+    "sub_questions_independent": null
+  },
+  "5": {
+    "question_start": "5. (8 points) Carry out backtra",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "6": {
+    "question_start": "6. (7 points) Now, use the mini",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "7": {
+    "question_start": "7. (5 points) Explain how this",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "8": {
+    "question_start": "8. (5 points) Describe in detai",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "9": {
+    "question_start": "9. (2 points) Give a specific",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "10": {
+    "question_start": "10. (3 points) Explain why in",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "11": {
+    "question_start": "11. (5 points) Write down the",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "12": {
+    "question_start": "12. (10 points) Draw a neural",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "13": {
+    "question_start": "13. (15 points) Consider two p",
+    "question_type": "Numerical",
+    "sub_questions_independent": true
+  },
+  "14": {
+    "question_start": "14. (3 points) For each senten",
+    "question_type": "Short Answer",
+    "sub_questions_independent": false
+  },
+  "15": {
+    "question_start": "15. (3 points) Annotate each",
+    "question_type": "Short Answer",
+    "sub_questions_independent": false
+  },
+  "16": {
+    "question_start": "16. (5 points) Define informa",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "17": {
+    "question_start": "17. (4 points) Hiring informa",
+    "question_type": "Short Answer",
+    "sub_questions_independent": false
+  }
+}

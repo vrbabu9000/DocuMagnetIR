@@ -1,0 +1,92 @@
+{
+  "1": {
+    "question_start": "1. (8 points) Consider a self-dr",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "2": {
+    "question_start": "2. (5 points) Consider a computer progr",
+    "question_type": "Theory",
+    "sub_questions_independent": true
+  },
+  "3": {
+    "question_start": "3. (7 points) Draw the full search tree",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "4": {
+    "question_start": "4. (3 points) If we use depth-first sea",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "5": {
+    "question_start": "5. (10 points) For A* search, indicate",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "6": {
+    "question_start": "6. (5 points) Write the estimated valu",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "7": {
+    "question_start": "7. (2 points) Indicate the proper move",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "8": {
+    "question_start": "8. (5 points) Circle each leaf node (i",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "9": {
+    "question_start": "9. (5 points) Convert the following se",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "10": {
+    "question_start": "10. (10 points) Given the following pr",
+    "question_type": "Proof",
+    "sub_questions_independent": null
+  },
+  "11": {
+    "question_start": "11. (5 points) Suppose we roll a die $2",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "12": {
+    "question_start": "12. ( $5$ points) In the general popula",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "13": {
+    "question_start": "13. (5 points) What is the probability",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "14": {
+    "question_start": "14. (5 points) What is the probability",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "15": {
+    "question_start": "15. (5 points) What is the probability",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "16": {
+    "question_start": "16. (5 points) Assuming our RL agent ex",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "17": {
+    "question_start": "17. (5 points) Assuming the RL agent is",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "18": {
+    "question_start": "18. (5 points) Show the final state of",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  }
+}

@@ -1,0 +1,87 @@
+\title{
+Final Exam
+}
+
+\author{
+600.464/664 Artificial Intelligence \\ Spring $2019$
+}
+
+\section{Name:}
+
+\section{Instructions}
+- Please be sure to write both your name and section in the space above!
+- Please be sure to read through the entire exam before you start, and be mindful of the time. If one question is taking too long, it may be worth moving on and coming back to the problem question(s) after the rest of the exam is complete.
+- Remember that you are only allowed one sheet (both sides) of notes, everything else besides that and the test itself must be off of your workspace.
+- Please show ALL relevant work for your answers and provide explanations when prompted. Failure to do either will result in loss of credit.
+- You will have until $5 \mathrm{pm}$ to complete this test.
+
+\section{Basic Search}
+1. ( $5$ points) Number the nodes ( $1,2, \ldots$ ) in the order they are explored in depth-first search. Process children left to right.
+![](https://cdn.mathpix.com/cropped/2025_04_29_4ed9db68e9c0ab27d835g-03.jpg?height=700&width=1486&top_left_y=436&top_left_x=200)
+2. ( $5$ points) Number the nodes $(1,2, \ldots$ ) in the order they are explored in iterative deepening search. Enter multiple numbers, if a node is visited more than once. Process children left to right.
+![](https://cdn.mathpix.com/cropped/2025_04_29_4ed9db68e9c0ab27d835g-03.jpg?height=703&width=1489&top_left_y=1633&top_left_x=199)
+
+Consider the search space below, where $\mathbf{S}$ is the start node and $\mathbf{G}$ satisfies the goal test. Arcs are labeled with the cost of traversing them and the heuristic cost to the goal is reported inside nodes (so lower scores are better).
+![](https://cdn.mathpix.com/cropped/2025_04_29_4ed9db68e9c0ab27d835g-05.jpg?height=833&width=1004&top_left_y=429&top_left_x=585)
+3. (10 points) For $\mathrm{A}^{*}$ search, indicate which goal state is reached at what cost and list, in order, all the states popped off of the OPEN list. You use a search graph to show your work. Do not expand paths that revisit states at higher cost.
+
+Note: When all else is equal, nodes should be removed from OPEN in alphabetical order.
+
+\section{Path to goal (cost):}
+
+\section{States popped off of OPEN:}
+4. (6 points) Convert the following sentences into first-order predicate calculus logic:
+
+If a student gets a good grade in an exam in a class, they are happy.
+
+If a student takes a exam for a class, studied for the exam in the class, and is smart, they get a good grade.
+
+If a student takes a class, they take the exam.
+
+Jane takes the class Artificial Intelligence.
+
+Jane studied for the exam in Artificial Intelligence.
+
+Jane is smart.
+5. (6 points) Convert all rules to Conjunctive Normal Form (CNF). You do not need to restate rules that are already in CNF.
+6. (8 points) Carry out a resolution proof of the statement Jane is happy. Hint: start with $\neg$ Happy(Jane).
+
+If students know the material, they answer a yes/no question correctly $p(c \mid k)=99 \%$ of the time. If students do not know the material, they get it right $p(c \mid \neg k)=50 \%$ of the time.
+When a students answer a question correctly, you want to know the probability $p(k \mid c)$ that they know the material.
+7. (5 points) Give an explanation why this is not sufficient information to compute the probability $p(k \mid c)$ ?
+8. (5 points) Assume that half of the students know the material. Compute the probability $p(k \mid c)$.
+9. (5 points) Instead, assume that on average $80 \%$ of the students answer the question correctly. Compute the probability $p(k \mid c)$.
+
+Consider the following plot of data points (circles and squares).
+![](https://cdn.mathpix.com/cropped/2025_04_29_4ed9db68e9c0ab27d835g-11.jpg?height=636&width=1074&top_left_y=327&top_left_x=558)
+10. (5 points) Build a linear classifier $(x, y) \rightarrow$ shape. You do not have to get the optimal parameter values for the model but they should be reasonable.
+11. (5 points) Draw a decision tree for this data. Will it classify all examples correctly?
+
+Consider the non-deterministic reinforcement environment drawn below. States are represented by circles, and actions by squares. The Probability of a transitions is indicated on the arc from actions to states. Immediate rewards are indicated above and below states. Once the agent reaches the end state the current episode ends.
+![](https://cdn.mathpix.com/cropped/2025_04_29_4ed9db68e9c0ab27d835g-13.jpg?height=562&width=1191&top_left_y=440&top_left_x=494)
+12. (15 points) The current policy is to always take action $\mathbf{X}$.
+(a) What paths could be taken?
+(b) What is each path's probability?
+(c) What is each path's reward?
+(d) What is the utility of each state?
+13. (5 points) Assuming that under the current policy state $\mathbf{b}$ has higher utility than state $\mathbf{a}$.
+(a) How will a greedy agent that has access to the transition probabilities change the policy?
+(b) Is the updated policy guaranteed to be the best policy?
+14. (5 points) Co-reference resolution.
+(a) Consider the following sentences.
+
+The boy kicks the ball. He scores a goal.
+To which noun (boy, ball or goal) does the pronoun he refer to?
+
+How can a computer identify the right noun?
+(b) Consider the following sentences.
+
+Jane went to the store to eat a pizza. It was very tasty.
+To which noun (Jane, store or pizza) does the pronoun it refer to?
+
+How can a computer identify the right noun?
+15. (10 points) N-Gram Language models. You are given the following text (tokenized, lowercased) as training data (with $<$ s $>$ as beginning-of-sentence marker and $</$ s $>$ as end-of-sentence marker).
+$\langle s\rangle$ the sun is shining. $\langle/ s\rangle\langle s\rangle$ the girl is going to the park with the boy. $\langle/ s\rangle\langle s\rangle$ the boy gives the girl a flower. $\langle/ s\rangle\langle s\rangle$ she is happy.$\langle/ s\rangle\langle s\rangle$ the boy is happy, too.$</ s\rangle$
+
+You use this data to train a bigram language model with maximum likelihood estimation. What score will it assign to the following sentence?
+$<s>$ the girl is happy $.</ s>$

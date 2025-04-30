@@ -1,0 +1,77 @@
+{
+  "1": {
+    "question_start": "1. ( 5 points) Number the node",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "2": {
+    "question_start": "2. ( 5 points) Number the node",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "3": {
+    "question_start": "3. (10 points) For A* search, in",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "4": {
+    "question_start": "4. (6 points) Convert the follow",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "5": {
+    "question_start": "5. (6 points) Convert all rules",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "6": {
+    "question_start": "6. (8 points) Carry out a res",
+    "question_type": "Proof",
+    "sub_questions_independent": null
+  },
+  "7": {
+    "question_start": "7. (5 points) Give an explanat",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "8": {
+    "question_start": "8. (5 points) Assume that half",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "9": {
+    "question_start": "9. (5 points) Instead, assume t",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "10": {
+    "question_start": "10. (5 points) Build a linear c",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "11": {
+    "question_start": "11. (5 points) Draw a decision",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "12": {
+    "question_start": "12. (15 points) The current po",
+    "question_type": "Numerical",
+    "sub_questions_independent": false
+  },
+  "13": {
+    "question_start": "13. (5 points) Assuming that u",
+    "question_type": "Theory",
+    "sub_questions_independent": false
+  },
+  "14": {
+    "question_start": "14. (5 points) Co-reference re",
+    "question_type": "Theory",
+    "sub_questions_independent": false
+  },
+  "15": {
+    "question_start": "15. (10 points) N-Gram Languag",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  }
+}

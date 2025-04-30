@@ -1,0 +1,82 @@
+{
+  "1": {
+    "question_start": "1. (5 points) Show mathematica",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "2": {
+    "question_start": "2. (5 points) A more detailed surv",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "3": {
+    "question_start": "3. (10 points) Draw a Bayesian n",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "4": {
+    "question_start": "1. (5 points) How would a trained",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "5": {
+    "question_start": "2. (5 points) How would a powerfu",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "6": {
+    "question_start": "3. (10 point) Which model will li",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "7": {
+    "question_start": "1. (5 points) Draw a computation",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "8": {
+    "question_start": "2. (5 points) If the input is (x_1",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "9": {
+    "question_start": "3. (5 points) Add formulas to the",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "10": {
+    "question_start": "4. (5 points) With a learning rat",
+    "question_type": "Numerical",
+    "sub_questions_independent": null
+  },
+  "11": {
+    "question_start": "1. (4 points) Assuming our RL ag",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "12": {
+    "question_start": "2. (12 points) Following a random",
+    "question_type": "Numerical",
+    "sub_questions_independent": false
+  },
+  "13": {
+    "question_start": "3. (4 points) With sufficient num",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "14": {
+    "question_start": "1. (5 points) Define the process",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "15": {
+    "question_start": "2. (10 point) We want to use a de",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  },
+  "16": {
+    "question_start": "3. (5 points) What is the key dif",
+    "question_type": "Theory",
+    "sub_questions_independent": null
+  }
+}

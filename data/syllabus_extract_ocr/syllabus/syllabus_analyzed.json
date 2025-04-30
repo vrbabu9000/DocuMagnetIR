@@ -1,0 +1,58 @@
+{
+  "course_name": "Artificial Intelligence",
+  "topics": [
+    {
+      "name": "Artificial Intelligence in Context",
+      "subtopics": [
+        "AI in the Public Imagination",
+        "Philosophy of Mind",
+        "Cognitive Neuroscience",
+        "Cognitive Psychology"
+      ]
+    },
+    {
+      "name": "Intelligent Agents, Heuristic Search, and Game Playing",
+      "subtopics": [
+        "Intelligent Agents",
+        "Basic Search",
+        "Informed Search",
+        "Game Playing",
+        "Constraint Satisfaction"
+      ]
+    },
+    {
+      "name": "Logic and Knowledge Representation",
+      "subtopics": [
+        "Logical Agents",
+        "First Order Logic",
+        "Inference in First-Order Logic",
+        "Knowledge Representation",
+        "Planning"
+      ]
+    },
+    {
+      "name": "Uncertainty",
+      "subtopics": [
+        "Probabilistic Reasoning",
+        "Bayesian Networks",
+        "Markov Decision Processes",
+        "Decision Theory"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "subtopics": [
+        "Statistical Learning",
+        "Neural Networks",
+        "Reinforcement Learning"
+      ]
+    },
+    {
+      "name": "Natural Language",
+      "subtopics": [
+        "Natural Language Processing",
+        "Machine Translation"
+      ]
+    }
+  ]
+}

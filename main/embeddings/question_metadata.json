@@ -1,0 +1,994 @@
+[
+  {
+    "index": 0,
+    "question_number": 1,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 1,
+      "question_text": "1. (8 points) Consider a self-driving car as an intelligent agent. Name two items for each of the PEAS elements.\n- Performance measures:\n- Environment:\n$$\\begin{aligned}\n& \\text { res: } \\\\\n& \\text { speed to reach goal } \\\\\n& \\text { accident avoidane }\n\\end{aligned}$$\n$$\\begin{aligned}\n& \\text { traffic (other ares) } \\\\\n& \\text { road }\n\\end{aligned}$$\n- Actuators:\n$$\\begin{aligned}\n& \\text { motor (acellestor) } \\\\\n& \\text { steer is }\n\\end{aligned}$$\n- Sensors:\n$$\\begin{array}{ll}\n\\text { speedometer cave } \\\\\n\\text { GPS lidar }\n\\end{array}$$",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 1,
+    "question_number": 3,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 3,
+      "question_text": "3. (7 points) Draw the full search tree of breadth-first search that explores this grid.\n- Note that search may return to already visited cells.\n- The search graph must include all leaf nodes at maximum depth.\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-3.jpg?height=533&width=590&top_left_y=1368&top_left_x=594)",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 2,
+    "question_number": 4,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 4,
+      "question_text": "4. (3 points) If we use depth-first search and move\n- up, whenever possible\n- right, whenever possible (and up is not possible)\n- down, whenever possible (and up and right is not possible)\n- left, otherwise\n\nAgain, search may return to already visited cells.\nWill depth-first succeed? If yes, in how many steps? If no, why not?\n$$A \\rightarrow b \\rightarrow c \\rightarrow e$$\n\nConsider the search space below, where $\\mathbf{S}$ is the start node and $\\mathbf{G 1}$ and $\\mathbf{G 2}$ satisfy the goal test. Arcs are labeled with the cost of traversing them and the heuristic cost to a goal is reported inside nodes (so lower scores are better).\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-4.jpg?height=711&width=1235&top_left_y=433&top_left_x=472)",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 3,
+    "question_number": 5,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 5,
+      "question_text": "5. (10 points) For A* search, indicate which goal state is reached at what cost and list, in order, all the states popped off of the OPEN list. You use a search graph to show your work.\nNote: When all else is equal, nodes should be removed from OPEN in alphabetical order.\n\nPath to goal (cost):\n\nStates popped off of OPEN:\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-4.jpg?height=1231&width=1811&top_left_y=1521&top_left_x=0)\n\n\\section{Game Playing}\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-5.jpg?height=219&width=545&top_left_y=0&top_left_x=958)\n\nApply the mini-max algorithm to the partial game tree below, where it is the minimizer's turn to play and the game does not involve randomness. The values estimated by the static-board evaluator (SBE) are indicated in the leaf nodes (higher scores are better for the maximizer).\n\nProcess this game tree working left-to-right.\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-5.jpg?height=724&width=1636&top_left_y=527&top_left_x=326)",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 4,
+    "question_number": 6,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 6,
+      "question_text": "6. (5 points) Write the estimated values of the intermediate nodes inside their circles.",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 5,
+    "question_number": 7,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 7,
+      "question_text": "7. (2 points) Indicate the proper move of the minimizer by circling one of the root's outgoing arcs.",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 6,
+    "question_number": 8,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 8,
+      "question_text": "8. (5 points) Circle each leaf node (if any) whose SBE score does not need to be consulted.\n\nBriefly explain why:\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-5.jpg?height=397&width=1432&top_left_y=1761&top_left_x=482)",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 7,
+    "question_number": 9,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 9,
+      "question_text": "9. (5 points) Convert the following sentence into first-order predicate calculus logic: There is a lacrosse player who has played in every game this season.\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-6.jpg?height=269&width=1820&top_left_y=356&top_left_x=212)",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 8,
+    "question_number": 10,
+    "question_type": "Proof",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 10,
+      "question_text": "10. (10 points) Given the following propositional-logic clauses, show $E$ must be true by adding $\\neg E$ and using only the resolution inference rule to derive a contradiction.\nUse the notation presented in class (and in the book) where the resulting clause is connected by lines to the two clauses resolved.\n- $A \\vee \\neg C$\n- $B \\vee \\neg A$\n- $B \\vee \\neg D$\n- $E \\vee \\neg A \\vee \\neg B$\n- $C$\n- $\\neg D$\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-6.jpg?height=751&width=562&top_left_y=1164&top_left_x=955)",
+      "question_type": "Proof",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 9,
+    "question_number": 11,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 11,
+      "question_text": "11. (5 points) Suppose we roll a die $2$ times. What is the probability that the sum of the numbers is $3$ ?\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-7.jpg?height=418&width=1970&top_left_y=371&top_left_x=65)",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 10,
+    "question_number": 12,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 12,
+      "question_text": "12. ( $5$ points) In the general population, $0.1 \\%$ have the disease X .\n\nDoctors developed a test with the following properties:\n- If a person has the disease, the test detects it $90 \\%$ of the time, and fails to detect it in $10 \\%$ of the time.\n- If a person does not have the disease, the test gives false positive indication $10 \\%$ of the time, and a correct negative indication $90 \\%$ of the time.\n\nWhat is the probability that a random person who receives a positive test result, does indeed have the disease (round numbers when appropriate)?\n$$\\begin{aligned}\np(T \\mid D) & =0.9 \\quad p(D)=0.001 \\\\\np(T / \\sim D) & =0.1 \\\\\np(D \\mid T) & =\\frac{p(T \\mid D) p(D)}{P(T)} \\\\\n& \\left.=\\frac{p(T \\mid D) p(D)}{p(T \\mid D) p(D)+p(T)} 1 / D\\right) p(\\neg D) \\\\\n& =.9 \\times .001 \\\\\n.9 \\times .001+.1 \\times .999 & \\approx \\frac{.9}{1.00}\n\\end{aligned}$$\n\nConsider the following Bayesian Network, where variables A-D are all Boolean valued (when answering the questions be sure to show your work, if a computation gets too convoluted it's fine just state terms with numbers):\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-8.jpg?height=443&width=985&top_left_y=391&top_left_x=597)\n\\begin{tabular}{c|c|c}\n$\\mathbf{A}$ & $\\mathbf{B}$ & $\\mathbf{P}(\\mathbf{C}=$ true $\\mid \\mathbf{A}, \\mathbf{B})$ \\\\\n\\hline false & false & $0.2$ \\\\\nfalse & true & $0.3$ \\\\\ntrue & false & $0.1$ \\\\\ntrue & true & $0.6$\n\\end{tabular}\n\\begin{tabular}{c|c|c}\n$\\mathbf{B}$ & $\\mathbf{C}$ & $\\mathbf{P}(\\mathbf{D}=$ true $\\mid \\mathbf{B}, \\mathbf{C})$ \\\\\n\\hline false & false & $0.9$ \\\\\nfalse & true & $0.8$ \\\\\ntrue & false & $0.4$ \\\\\ntrue & true & $0.3$\n\\end{tabular}",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 11,
+    "question_number": 13,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 13,
+      "question_text": "13. (5 points) What is the probability that all four of these Boolean variables are false?\n$$\\begin{aligned}\n& p(\\neg A) p(\\neg B) p(\\neg C \\mid \\neg A \\rightarrow A) p(\\neg D \\mapsto B, \\supset C) \\\\\n= & .8 \\times .3 \\times .8 \\times .1=0 Q 2\n\\end{aligned}$$",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 12,
+    "question_number": 14,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 14,
+      "question_text": "14. (5 points) What is the probability that $\\mathbf{A}$ is true, $\\mathbf{C}$ is true and $\\mathbf{D}$ is false?\n$$p(A, C, P)=p(A, B, C, D)+p(A, B, C>D)$$",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 13,
+    "question_number": 15,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 15,
+      "question_text": "15. (5 points) What is the probability that $\\mathbf{A}$ is true given that $\\mathbf{C}$ is the and $\\mathbf{D}$ is false?\n$$\\begin{aligned}\n& P(A \\mid C, \\rightarrow D)=\\frac{P(A, C, D D)}{P(C, \\neg D)}= \\\\\n& =\\frac{P(A, C, D D)}{P(A, C, \\neg D)+P(\\neg A, C, \\neg D)} \\\\\n& =\\frac{.06(1)}{.06+P(\\neg A, C, \\neg D)}=\\ldots=\\frac{.06}{.06+.127}\n\\end{aligned}$$\n\nConsider the deterministic reinforcement environment drawn below, where the current state of the Q table is indicated on the arcs. Let $\\gamma=1$. Immediate rewards are indicated inside nodes. Once the agent reaches the end state the current episode ends.\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-9.jpg?height=396&width=917&top_left_y=344&top_left_x=631)",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 14,
+    "question_number": 16,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 16,
+      "question_text": "16. (5 points) Assuming our RL agent exploits its policy (with learning turned off), what is the path it will take from start to end? Briefly explain your answer.\n$$f_{a} \\rightarrow b \\rightarrow c \\rightarrow e u d$$",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 15,
+    "question_number": 17,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 17,
+      "question_text": "17. (5 points) Assuming the RL agent is using one-step Q learning and moves from node start to node $\\mathbf{b}$. Report below the changes to the graph above (only display what changes). Assume a learning rate of $\\alpha=1$. Show your work.\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-9.jpg?height=747&width=1515&top_left_y=1342&top_left_x=609)",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 16,
+    "question_number": 18,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": 18,
+      "question_text": "18. (5 points) Show the final state of the Q table after a very large number of training episodes (ie., show the Q table where the Bellman Equation is satisfied everywhere). No need to show your work nor explain your answer.\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-9.jpg?height=324&width=925&top_left_y=2283&top_left_x=573)",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 17,
+    "question_number": 2,
+    "question_type": "Theory",
+    "sub_questions_independent": false,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 2,
+      "question_text": "2. (5 points) Convert the following sentences into first-order predicate calculus logic:\n\nIf a team wins a game, it is happy.\n\nIf a team plays a game, is better than the opponent, and is in good form, it wins the game.\n\nThe Blue Jays play a game against the Tigers.\n\nThe Blue Jays are better than the Tigers.\n\nThe Blue Jays are in good form.",
+      "question_type": "Theory",
+      "sub_questions_independent": false,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 18,
+    "question_number": 3,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 3,
+      "question_text": "3. (5 points) Convert all rules to Conjunctive Normal Form (CNF). You do not need to restate rules that are already in CNF.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 19,
+    "question_number": 4,
+    "question_type": "Proof",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 4,
+      "question_text": "4. (5 points) Carry out a resolution proof of the statement The Blue Jays are happy.\n\nConsider the following Mini Sodoku puzzle. (numbers are assigned values, letters are names for cells)\n\\begin{tabular}{|c|c|c|}\n\\hline A & B & $\\mathbf{1}$ \\\\\n\\hline C & $\\mathbf{2}$ & D \\\\\n\\hline E & F & G \\\\\n\\hline\n\\end{tabular}\n\nRecall the rules of Sudoku:\n- Each cell is assigned a number (in Mini Sudoku, the numbers are 1, 2, and 3).\n- No row can have the same number twice.\n- No column can have the same number twice.\n\nThese rules can be specified by constraints. You do not need to formally write these constraints down.",
+      "question_type": "Proof",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 20,
+    "question_number": 5,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 5,
+      "question_text": "5. (8 points) Carry out backtracking search. Explore the search space in the alphabetic order of the cell names, and assign values in numerical order (i.e., first assign 1, then 2, then 3). Draw the search tree. Stop and backtrack at leaves where constraints allow no valid variable assignment.",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 21,
+    "question_number": 6,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 6,
+      "question_text": "6. (7 points) Now, use the minimum remaining values (MRV) heuristic. Fill in the following table. Start with a row that specifies the remaining possible values for each variable. Then commit one variable to a value following the MRV heuristic (in case of ties follow alphabetical order).\n\\begin{tabular}{|l|l|l|l|l|l|l|l|l|}\n\\hline Step & & A & B & C & D & E & F & G \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $1$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $2$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $3$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $4$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $5$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $6$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $7$ & assigned value & & & & & & & \\\\\n\\hline\n\\end{tabular}\n\nAn evil robot has almost completed his evil plan for the total destruction of the human race. He has two nasty chemicals called A and B which are currently stored in containers $1$ and $2$ respectively. All he has to do now is mix them together in container $3$. His designer, an equally evil computer scientist, has equipped the evil robot with a propositional planning system that allows him to reason about the locations of particular things and about moving a thing from one place to another.",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 22,
+    "question_number": 7,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 7,
+      "question_text": "7. (5 points) Explain how this problem might be represented within a propositional planning system. Give specific examples of the way in which the start state and goal can be represented.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 23,
+    "question_number": 8,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 8,
+      "question_text": "8. (5 points) Describe in detail an algorithm that can be used to find a plan using this form of representation.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 24,
+    "question_number": 9,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 9,
+      "question_text": "9. (2 points) Give a specific example of a successor-state axiom using the representation you suggested.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 25,
+    "question_number": 10,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 10,
+      "question_text": "10. (3 points) Explain why in this particular planning problem it might be necessary to include one or more precondition axioms and give an example of such an axiom using your representation.\n\nConsider the following plot of data points.\n![](https://cdn.mathpix.com/cropped/2025_04_29_4e7077992474c7f2188dg-07.jpg?height=456&width=500&top_left_y=333&top_left_x=848)",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 26,
+    "question_number": 11,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 11,
+      "question_text": "11. (5 points) Write down the formula for a linear classifier function $f(x, y) \\rightarrow$ value where positive output values correspond to the sign + and negative values correspond to the sign - . The classifier should classify all training examples corrrectly.\n\nNow consider the following plot of data points.\n![](https://cdn.mathpix.com/cropped/2025_04_29_4e7077992474c7f2188dg-08.jpg?height=457&width=476&top_left_y=227&top_left_x=857)",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 27,
+    "question_number": 12,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 12,
+      "question_text": "12. (10 points) Draw a neural network with weight values that classifies all values correctly. You may use the following activation function.\n$$\\operatorname{threshold}(z)= \\begin{cases}1 & \\text { if } z \\geq 1 \\\\ -1 & \\text { else }\\end{cases}$$\n\nConsider the non-deterministic reinforcement environment drawn below. States are represented by circles, and actions by squares. The Probability of a transitions is indicated on the arc from actions to states. Immediate rewards are indicated above and below states. Once the agent reaches the end state the current episode ends.\n![](https://cdn.mathpix.com/cropped/2025_04_29_4e7077992474c7f2188dg-09.jpg?height=562&width=1191&top_left_y=437&top_left_x=491)",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 28,
+    "question_number": 13,
+    "question_type": "Numerical",
+    "sub_questions_independent": false,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 13,
+      "question_text": "13. (15 points) Consider two possible policies: always take action $\\mathbf{X}$ or always take action $\\mathbf{Y}$. For each policy, compute the answers to the following questions.\n(a) What paths could be taken?\n(b) What is each path's probability?\n(c) What is each path's reward?\n(d) What is the utility of each state?\n\nWe plan to build a database of which persons were hired at which company from the corpus of news paper articles.\nThe database table looks like follows:\n\\begin{tabular}{c|c|c} \nName & Position & Company \\\\\n\\hline Joe Johnson & sales representative & IBM \\\\\n\\hline Frida Feldman & lawyer & Microsoft \\\\\n\\hline$\\ldots$ & $\\ldots$ & $\\ldots$ \\\\\n\\hline\n\\end{tabular}\n\nConsider the following sentences\n- Albert Altman was hired by Apple as a software developer.\n- Booking.com hired Brianna Bayer as an accountant.\n- Comcast hired as their new CEO Catherine Carter.",
+      "question_type": "Numerical",
+      "sub_questions_independent": false,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 29,
+    "question_number": 14,
+    "question_type": "Short Answer",
+    "sub_questions_independent": false,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 14,
+      "question_text": "14. (3 points) For each sentence, write a string pattern matching expression that extracts the relevant information (use any pattern matching formalism you like).",
+      "question_type": "Short Answer",
+      "sub_questions_independent": false,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 30,
+    "question_number": 15,
+    "question_type": "Short Answer",
+    "sub_questions_independent": false,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 15,
+      "question_text": "15. (3 points) Annotate each sentence with dependency relationships with appropriate labels.",
+      "question_type": "Short Answer",
+      "sub_questions_independent": false,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 31,
+    "question_number": 16,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 16,
+      "question_text": "16. (5 points) Define informally a pattern over dependency structures that allows you to extract the relevant information from all the example sentences for the database table.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 32,
+    "question_number": 17,
+    "question_type": "Short Answer",
+    "sub_questions_independent": false,
+    "source_pdf": "exam-2020",
+    "source_file": "exam-2020.mmd",
+    "original_object": {
+      "question_number": 17,
+      "question_text": "17. (4 points) Hiring information may be expressed in many different ways in natural language. Below is a list of general problems in natural language processing. Give an example sentence that contains relevant hiring information for out database that demonstrates why each of these problems poses a challenge for our simple extraction patterns.\n- Synonymy\n- Hypernymy\n- Co-reference\n- Semantic inference",
+      "question_type": "Short Answer",
+      "sub_questions_independent": false,
+      "source_pdf": "exam-2020",
+      "source_file": "exam-2020.mmd"
+    }
+  },
+  {
+    "index": 33,
+    "question_number": 4,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 4,
+      "question_text": "4. (6 points) Convert the following sentences into first-order predicate calculus logic:\n\nIf a student gets a good grade in an exam in a class, they are happy.\n\nIf a student takes a exam for a class, studied for the exam in the class, and is smart, they get a good grade.\n\nIf a student takes a class, they take the exam.\n\nJane takes the class Artificial Intelligence.\n\nJane studied for the exam in Artificial Intelligence.\n\nJane is smart.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 34,
+    "question_number": 5,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 5,
+      "question_text": "5. (6 points) Convert all rules to Conjunctive Normal Form (CNF). You do not need to restate rules that are already in CNF.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 35,
+    "question_number": 6,
+    "question_type": "Proof",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 6,
+      "question_text": "6. (8 points) Carry out a resolution proof of the statement Jane is happy. Hint: start with $\\neg$ Happy(Jane).\n\nIf students know the material, they answer a yes/no question correctly $p(c \\mid k)=99 \\%$ of the time. If students do not know the material, they get it right $p(c \\mid \\neg k)=50 \\%$ of the time.\nWhen a students answer a question correctly, you want to know the probability $p(k \\mid c)$ that they know the material.",
+      "question_type": "Proof",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 36,
+    "question_number": 7,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 7,
+      "question_text": "7. (5 points) Give an explanation why this is not sufficient information to compute the probability $p(k \\mid c)$ ?",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 37,
+    "question_number": 8,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 8,
+      "question_text": "8. (5 points) Assume that half of the students know the material. Compute the probability $p(k \\mid c)$.",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 38,
+    "question_number": 9,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 9,
+      "question_text": "9. (5 points) Instead, assume that on average $80 \\%$ of the students answer the question correctly. Compute the probability $p(k \\mid c)$.\n\nConsider the following plot of data points (circles and squares).\n![](https://cdn.mathpix.com/cropped/2025_04_29_4ed9db68e9c0ab27d835g-11.jpg?height=636&width=1074&top_left_y=327&top_left_x=558)",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 39,
+    "question_number": 10,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 10,
+      "question_text": "10. (5 points) Build a linear classifier $(x, y) \\rightarrow$ shape. You do not have to get the optimal parameter values for the model but they should be reasonable.",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 40,
+    "question_number": 11,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 11,
+      "question_text": "11. (5 points) Draw a decision tree for this data. Will it classify all examples correctly?\n\nConsider the non-deterministic reinforcement environment drawn below. States are represented by circles, and actions by squares. The Probability of a transitions is indicated on the arc from actions to states. Immediate rewards are indicated above and below states. Once the agent reaches the end state the current episode ends.\n![](https://cdn.mathpix.com/cropped/2025_04_29_4ed9db68e9c0ab27d835g-13.jpg?height=562&width=1191&top_left_y=440&top_left_x=494)",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 41,
+    "question_number": 12,
+    "question_type": "Numerical",
+    "sub_questions_independent": false,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 12,
+      "question_text": "12. (15 points) The current policy is to always take action $\\mathbf{X}$.\n(a) What paths could be taken?\n(b) What is each path's probability?\n(c) What is each path's reward?\n(d) What is the utility of each state?",
+      "question_type": "Numerical",
+      "sub_questions_independent": false,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 42,
+    "question_number": 13,
+    "question_type": "Theory",
+    "sub_questions_independent": false,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 13,
+      "question_text": "13. (5 points) Assuming that under the current policy state $\\mathbf{b}$ has higher utility than state $\\mathbf{a}$.\n(a) How will a greedy agent that has access to the transition probabilities change the policy?\n(b) Is the updated policy guaranteed to be the best policy?",
+      "question_type": "Theory",
+      "sub_questions_independent": false,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 43,
+    "question_number": 14,
+    "question_type": "Theory",
+    "sub_questions_independent": false,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 14,
+      "question_text": "14. (5 points) Co-reference resolution.\n(a) Consider the following sentences.\n\nThe boy kicks the ball. He scores a goal.\nTo which noun (boy, ball or goal) does the pronoun he refer to?\n\nHow can a computer identify the right noun?\n(b) Consider the following sentences.\n\nJane went to the store to eat a pizza. It was very tasty.\nTo which noun (Jane, store or pizza) does the pronoun it refer to?\n\nHow can a computer identify the right noun?",
+      "question_type": "Theory",
+      "sub_questions_independent": false,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 44,
+    "question_number": 15,
+    "question_type": "Numerical",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2019",
+    "source_file": "exam-2019.mmd",
+    "original_object": {
+      "question_number": 15,
+      "question_text": "15. (10 points) N-Gram Language models. You are given the following text (tokenized, lowercased) as training data (with $<$ s $>$ as beginning-of-sentence marker and $</$ s $>$ as end-of-sentence marker).\n$\\langle s\\rangle$ the sun is shining. $\\langle/ s\\rangle\\langle s\\rangle$ the girl is going to the park with the boy. $\\langle/ s\\rangle\\langle s\\rangle$ the boy gives the girl a flower. $\\langle/ s\\rangle\\langle s\\rangle$ she is happy.$\\langle/ s\\rangle\\langle s\\rangle$ the boy is happy, too.$</ s\\rangle$\n\nYou use this data to train a bigram language model with maximum likelihood estimation. What score will it assign to the following sentence?\n$<s>$ the girl is happy $.</ s>$",
+      "question_type": "Numerical",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2019",
+      "source_file": "exam-2019.mmd"
+    }
+  },
+  {
+    "index": 45,
+    "question_number": 1,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 1,
+      "question_text": "1. (5 points) Show mathematically if color preference and being tall are independent or not independent of each other.\n\nNot independent:\n$p(b) p(t)=(p(b, t)+p(b, n)) \\times(p(b, t)+p(p, t))=(.32+.38) \\times(.32+.08)=.7 \\times .4=.28 \\neq .32=p(b, t)$",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 46,
+    "question_number": 2,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 2,
+      "question_text": "2. (5 points) A more detailed survey adds a question about gender. It finds the following probabilities.\n\\begin{tabular}{l|c|c|c|c} \n& Prefers Blue / Is Tall & Prefers Pink / Is Tall & Prefers Blue / Is not Tall & Prefers Pink / Is not Tall \\\\\n\\hline Female & $.05$ & $.05$ & $.20$ & $.20$ \\\\\n\\hline Male & $.27$ & $.03$ & $.18$ & $.02$ \\\\\n\\hline\n\\end{tabular}\n\nShow mathematically if color preference and being tall are conditionally independent given gender?\n$p(b, t \\mid m)=\\frac{p(b, t, m)}{\\sum_{b^{\\prime}, t^{\\prime}}\\left(b^{\\prime}, t^{\\prime}, m\\right)}=\\frac{.27}{.27+.03+.18+.02}=\\frac{.27}{.5}=.54$\n$p(b \\mid m)=\\frac{\\sum_{t^{\\prime}} p\\left(b, t^{\\prime}, m\\right)}{\\sum_{t^{\\prime}, m^{\\prime}} p\\left(b, t^{\\prime}, m^{\\prime}\\right)}=\\frac{.27+.18}{.27+.18+.05+.20}=\\frac{.45}{.50}=.9$\n$p(t \\mid m)=\\frac{\\sum_{b^{\\prime}} p\\left(b^{\\prime}, t, m\\right)}{\\sum_{b^{\\prime}, m} p\\left(b^{\\left.b^{\\prime}, t^{\\prime}, m\\right)}\\right.}=\\frac{.27+.03}{.27+.18+.05+.20}=\\frac{.30}{.50}=.6$\n$p(b \\mid m) \\times p(t \\mid m)=.9 \\times .6=.54$\nSince both are .54, they are conditionally independent.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 47,
+    "question_number": 3,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 3,
+      "question_text": "3. (10 points) Draw a Bayesian network that models these probabilities. Start the network with gender and have the model reflect any conditional independence you have found.\n\nThe following data samples are drawn from two Gaussian distributions. The positive data points from a distribution centered in (1,1), the negative examples from a distribution centered in ( $-1,-1$ ).\n![](https://cdn.mathpix.com/cropped/2025_04_29_40f75b37e5201d30ac1dg-3.jpg?height=839&width=842&top_left_y=372&top_left_x=617)",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 48,
+    "question_number": 4,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 4,
+      "question_text": "1. (5 points) How would a trained linear classifier divide up the space? Sketch an estimate of the decision boundary into the graph.\n\nLine more or less diagonal from top left to bottom right across the original",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 49,
+    "question_number": 5,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 5,
+      "question_text": "2. (5 points) How would a powerful classifier that is able to classify all training examples correctly divide up the space? Sketch an estimate of the decision boundary into the graph.\n\nVery detail line that snakes around each outlier data point.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 50,
+    "question_number": 6,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 6,
+      "question_text": "3. (10 point) Which model will likely do better on new unseen test samples? Explain how this example illustrates the concepts: Overfitting and Ockham's razor.\n\nThe more powerful model is likely to overfit, e.g., memorize the training examples and generalize less. Ockham's razor prefers a simpler solution, in this case the linear classifier.\n\nConsider the deep learning model defined by the following equations.\n\nInput values: $x_{1}, x_{2}$\nState variables: $s_{i}$\nTrainable parameters: $w_{i}$\nComputed value: $y$\nCorrect output value: $t$\n$$\\begin{aligned}\ns_{1} & =x_{1} \\times w_{1} \\\\\ns_{2} & =x_{2} \\times w_{2} \\\\\ns_{3} & =s_{1}+s_{2} \\\\\ns_{4} & =s_{3} \\times s_{3} \\\\\ny & =s_{4} \\times w_{3}\n\\end{aligned}$$\n\nLoss: $\\frac{1}{2}(t-y)^{2}$",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 51,
+    "question_number": 7,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 7,
+      "question_text": "1. (5 points) Draw a computation graph for this model, using similar notation to the one we used in class. (no solution - should be obvious)\n2. (5 points) If the input is $\\left(x_{1}, x_{2}\\right)=(2,-1)$ and all initial weights are $1$, and the correct output value is $10$, what is the loss?\n$s_{1}=2 \\times 1=2$\n$s_{2}=-1 \\times 1=-1$\n$s_{3}=2+-1=1$\n$s_{4}=1 \\times 1=1$\n$y=1 \\times 1=1$\n$L=\\frac{1}{2}(10-1)^{2}=81 / 2$\n3. (5 points) Add formulas to the graph that allow backpropagation to update the weights $w_{i}$.\n$\\frac{\\partial L}{\\partial y}=t-y \\quad \\frac{\\partial y}{\\partial s_{4}}=w_{3} \\quad \\frac{\\partial y}{\\partial w_{3}}=s_{4} \\quad \\frac{\\partial s 4}{\\partial s_{3}}=2 s_{3} \\quad \\frac{\\partial s 3}{\\partial s_{2}}=1 \\quad \\frac{\\partial s 3}{\\partial s_{1}}=1 \\quad \\frac{\\partial s 2}{\\partial w_{2}}=x_{2} \\quad \\frac{\\partial s 1}{\\partial w_{1}}=x_{1}$\n4. ( $5$ points) With a learning rate of $0.01$, what is the value of updated weight $w_{3}$ after carrying out gradient descent training with this example?\n$\\frac{\\partial L}{\\partial w_{1}}=\\frac{L\\left(y\\left(w_{3}\\right)\\right)}{\\partial w_{3}}=L^{\\prime}(y) y^{\\prime}\\left(w_{3}\\right)=(t-y) s_{4}=(10-16) 16=96$\n$\\Delta w_{3}=-96 \\times 0.01=-0.96$\n$\\Delta w_{3} \\leftarrow 1-0.96=0.04$\n\nConsider the deterministic reinforcement environment drawn below. Let $\\gamma=1$. Immediate rewards are indicated at the nodes (the number after R). The current state of the Q table is indicated on the arcs. Once the agent reaches the end state the current episode ends.\n![](https://cdn.mathpix.com/cropped/2025_04_29_40f75b37e5201d30ac1dg-5.jpg?height=380&width=925&top_left_y=374&top_left_x=573)\n\nRecall the update formula for Q-Learning (simplified from the class lecture).\n$$\\Delta Q(s, a)=\\alpha\\left(R\\left(s^{\\prime}\\right)+\\gamma \\max _{a^{\\prime}} Q\\left(s^{\\prime}, a^{\\prime}\\right)-Q(s, a)\\right)$$\n1. (4 points) Assuming our RL agent exploits its policy, what is the path it will take from start to end? start, $b, c$, end\n2. (12 points) Following a random path selection, the agent RL takes the path (start, a, c, end). Assume a learning rate of $\\alpha=1$. How are the Q values updated?\n(a) start $\\rightarrow \\mathrm{a}$\n\nUpdate: $1+-1--2=2$, new value: $-2+2=0$\n(b) $a \\rightarrow c$\n\nUpdate: $-6+1--1=-4$, new value: $-1+-4=-5$\n(c) $\\mathrm{c} \\rightarrow$ end\n\nUpdate: $2+0-1=1$, new value: $1+1=2$\n3. (4 points) With sufficient number of random paths, will the policy learned with Q-learning convergence to optimal values?\n\nYes.\n\nYou want to apply the idea of diffusion to language models. For the purpose of this question, we treat the problem of generative language models to generate a sentence of English, e.g., My cat likes to jump on the table.\n1. (5 points) Define the process the generates training data for this approach. What would this process do with the sentence My cat likes to jump on the table? Give an example training item generated from it.\nRandomly change each word, flip the position of two words, add or drop words with some probability. For instance, My cat likes to jump on the table. $\\rightarrow$ My cat likes to moon on the table.\n2. (10 point) We want to use a decoder-only Transformer model that learns from the generated training data. Draw a diagram and briefly describe the architecture of this model (no need for formulas or detailed steps such as layer normalization but describe inputs, outputs and intermediate representations).\n\nSolution should include: noised sequence of words as input, original sequence of words as output. Mapping words to embeddings at input, softmax predictionsa as output. Each transformer layer uses self-attention. Representations in intermediate steps are contextualized word representations.\n3. (5 points) What is the key difference between an autoencoder and a variational autoencoder?\n\nIn a variational autoencoder we predict the mean and variance of the distribution that a data item is mapped to. A subsequent random step generates the representation. In a regular autoencoder, the representation is directly predicted.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 52,
+    "question_number": 9,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 9,
+      "question_text": "3. (5 points) Add formulas to the graph that allow backpropagation to update the weights $w_{i}$.\n$\\frac{\\partial L}{\\partial y}=t-y \\quad \\frac{\\partial y}{\\partial s_{4}}=w_{3} \\quad \\frac{\\partial y}{\\partial w_{3}}=s_{4} \\quad \\frac{\\partial s 4}{\\partial s_{3}}=2 s_{3} \\quad \\frac{\\partial s 3}{\\partial s_{2}}=1 \\quad \\frac{\\partial s 3}{\\partial s_{1}}=1 \\quad \\frac{\\partial s 2}{\\partial w_{2}}=x_{2} \\quad \\frac{\\partial s 1}{\\partial w_{1}}=x_{1}$\n4. ( $5$ points) With a learning rate of $0.01$, what is the value of updated weight $w_{3}$ after carrying out gradient descent training with this example?\n$\\frac{\\partial L}{\\partial w_{1}}=\\frac{L\\left(y\\left(w_{3}\\right)\\right)}{\\partial w_{3}}=L^{\\prime}(y) y^{\\prime}\\left(w_{3}\\right)=(t-y) s_{4}=(10-16) 16=96$\n$\\Delta w_{3}=-96 \\times 0.01=-0.96$\n$\\Delta w_{3} \\leftarrow 1-0.96=0.04$\n\nConsider the deterministic reinforcement environment drawn below. Let $\\gamma=1$. Immediate rewards are indicated at the nodes (the number after R). The current state of the Q table is indicated on the arcs. Once the agent reaches the end state the current episode ends.\n![](https://cdn.mathpix.com/cropped/2025_04_29_40f75b37e5201d30ac1dg-5.jpg?height=380&width=925&top_left_y=374&top_left_x=573)\n\nRecall the update formula for Q-Learning (simplified from the class lecture).\n$$\\Delta Q(s, a)=\\alpha\\left(R\\left(s^{\\prime}\\right)+\\gamma \\max _{a^{\\prime}} Q\\left(s^{\\prime}, a^{\\prime}\\right)-Q(s, a)\\right)$$\n1. (4 points) Assuming our RL agent exploits its policy, what is the path it will take from start to end? start, $b, c$, end\n2. (12 points) Following a random path selection, the agent RL takes the path (start, a, c, end). Assume a learning rate of $\\alpha=1$. How are the Q values updated?\n(a) start $\\rightarrow \\mathrm{a}$\n\nUpdate: $1+-1--2=2$, new value: $-2+2=0$\n(b) $a \\rightarrow c$\n\nUpdate: $-6+1--1=-4$, new value: $-1+-4=-5$\n(c) $\\mathrm{c} \\rightarrow$ end\n\nUpdate: $2+0-1=1$, new value: $1+1=2$\n3. (4 points) With sufficient number of random paths, will the policy learned with Q-learning convergence to optimal values?\n\nYes.\n\nYou want to apply the idea of diffusion to language models. For the purpose of this question, we treat the problem of generative language models to generate a sentence of English, e.g., My cat likes to jump on the table.\n1. (5 points) Define the process the generates training data for this approach. What would this process do with the sentence My cat likes to jump on the table? Give an example training item generated from it.\nRandomly change each word, flip the position of two words, add or drop words with some probability. For instance, My cat likes to jump on the table. $\\rightarrow$ My cat likes to moon on the table.\n2. (10 point) We want to use a decoder-only Transformer model that learns from the generated training data. Draw a diagram and briefly describe the architecture of this model (no need for formulas or detailed steps such as layer normalization but describe inputs, outputs and intermediate representations).\n\nSolution should include: noised sequence of words as input, original sequence of words as output. Mapping words to embeddings at input, softmax predictionsa as output. Each transformer layer uses self-attention. Representations in intermediate steps are contextualized word representations.\n3. (5 points) What is the key difference between an autoencoder and a variational autoencoder?\n\nIn a variational autoencoder we predict the mean and variance of the distribution that a data item is mapped to. A subsequent random step generates the representation. In a regular autoencoder, the representation is directly predicted.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 53,
+    "question_number": 11,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 11,
+      "question_text": "1. (4 points) Assuming our RL agent exploits its policy, what is the path it will take from start to end? start, $b, c$, end",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 54,
+    "question_number": 12,
+    "question_type": "Numerical",
+    "sub_questions_independent": false,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 12,
+      "question_text": "2. (12 points) Following a random path selection, the agent RL takes the path (start, a, c, end). Assume a learning rate of $\\alpha=1$. How are the Q values updated?\n(a) start $\\rightarrow \\mathrm{a}$\n\nUpdate: $1+-1--2=2$, new value: $-2+2=0$\n(b) $a \\rightarrow c$\n\nUpdate: $-6+1--1=-4$, new value: $-1+-4=-5$\n(c) $\\mathrm{c} \\rightarrow$ end\n\nUpdate: $2+0-1=1$, new value: $1+1=2$",
+      "question_type": "Numerical",
+      "sub_questions_independent": false,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 55,
+    "question_number": 13,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 13,
+      "question_text": "3. (4 points) With sufficient number of random paths, will the policy learned with Q-learning convergence to optimal values?\n\nYes.\n\nYou want to apply the idea of diffusion to language models. For the purpose of this question, we treat the problem of generative language models to generate a sentence of English, e.g., My cat likes to jump on the table.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 56,
+    "question_number": 14,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 14,
+      "question_text": "1. (5 points) Define the process the generates training data for this approach. What would this process do with the sentence My cat likes to jump on the table? Give an example training item generated from it.\nRandomly change each word, flip the position of two words, add or drop words with some probability. For instance, My cat likes to jump on the table. $\\rightarrow$ My cat likes to moon on the table.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 57,
+    "question_number": 15,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 15,
+      "question_text": "2. (10 point) We want to use a decoder-only Transformer model that learns from the generated training data. Draw a diagram and briefly describe the architecture of this model (no need for formulas or detailed steps such as layer normalization but describe inputs, outputs and intermediate representations).\n\nSolution should include: noised sequence of words as input, original sequence of words as output. Mapping words to embeddings at input, softmax predictionsa as output. Each transformer layer uses self-attention. Representations in intermediate steps are contextualized word representations.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 58,
+    "question_number": 16,
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2024-solutions",
+    "source_file": "exam-2024-solutions.mmd",
+    "original_object": {
+      "question_number": 16,
+      "question_text": "3. (5 points) What is the key difference between an autoencoder and a variational autoencoder?\n\nIn a variational autoencoder we predict the mean and variance of the distribution that a data item is mapped to. A subsequent random step generates the representation. In a regular autoencoder, the representation is directly predicted.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2024-solutions",
+      "source_file": "exam-2024-solutions.mmd"
+    }
+  },
+  {
+    "index": 59,
+    "question_number": "2.1",
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": "2.1",
+      "question_text": "2. (5 points) Consider a computer program that is playing online poker.\n\nIs the environment of this intelligent agent ...\n- Fully observable?\nno\n- Deterministic?\nno\n- Static?\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-2.jpg?height=85&width=98&top_left_y=1508&top_left_x=550)\n- Discrete?\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-2.jpg?height=101&width=115&top_left_y=1668&top_left_x=547)\n\nIn which of these categories is a Go playing program different?\n\n\\section{determinate}",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 60,
+    "question_number": "2.2",
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": "2.2",
+      "question_text": "Just provide a yes/no answer to each of these questions.",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  },
+  {
+    "index": 61,
+    "question_number": "2.3",
+    "question_type": "Theory",
+    "sub_questions_independent": null,
+    "source_pdf": "exam-2017-solutions2",
+    "source_file": "exam-2017-solutions2.mmd",
+    "original_object": {
+      "question_number": "2.3",
+      "question_text": "In the following grid, we want to find the fastest path from $\\mathbf{A}$ to $\\mathbf{G}$.\nWe may move from every cell to each directly neighboring cell (up, down, left, right).\nThe cell in the center of the grid is unreachable.\n![](https://cdn.mathpix.com/cropped/2025_04_29_5d79eb8f853b8e4b4501g-3.jpg?height=608&width=608&top_left_y=471&top_left_x=783)",
+      "question_type": "Theory",
+      "sub_questions_independent": null,
+      "source_pdf": "exam-2017-solutions2",
+      "source_file": "exam-2017-solutions2.mmd"
+    }
+  }
+]

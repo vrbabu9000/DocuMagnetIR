@@ -1,0 +1,68 @@
+[
+  {
+    "version": "SuperNet-101",
+    "text": "\\title{\nFinal Exam\n}\n\n\\subsection{4/664 Artificial Intelligence}\n\nSpring $2020$\n\n\\section{Name:}\n\n\\section{Instructions}\n- Please be sure to write your name in the space above!\n- Please show ALL relevant work for your answers and provide explanations when prompted. Failure to do either will result in loss of credit.\n- You may upload a edited pdf file (preferably), a scan of printout with hand-written answers, or any other document with answers.\n- The exam is due by midnight on Gradescope.",
+    "page_idx": 1,
+    "pdf_selected_len": 11
+  },
+  {
+    "version": "SuperNet-101",
+    "text": "\n\nConsider the search space below, where $\\mathbf{S}$ is the start node and $\\mathbf{G}$ satisfies the goal test. Arcs are labeled with the cost of traversing them and the heuristic cost to the goal is reported inside nodes (so lower scores are better).\n![](https://cdn.mathpix.com/cropped/2025_04_29_4e7077992474c7f2188dg-02.jpg?height=828&width=999&top_left_y=372&top_left_x=536)\n1. ( $10$ points) For A* search, indicate which goal state is reached at what cost and list, in order, all the states popped off of the OPEN list. You use a search graph to show your work. Do not expand paths that revisit states at higher cost.\nNote: When all else is equal, nodes should be removed from OPEN in alphabetical order.\n\n\\section{Path to goal (cost):}\n\n\\section{Search graph (indicate order of states popped of OPEN list with numbers):}",
+    "page_idx": 2,
+    "pdf_selected_len": 11
+  },
+  {
+    "version": "SuperNet-101",
+    "text": "\n\n\\section{First Order Logic}\n2. (5 points) Convert the following sentences into first-order predicate calculus logic:\n\nIf a team wins a game, it is happy.\n\nIf a team plays a game, is better than the opponent, and is in good form, it wins the game.\n\nThe Blue Jays play a game against the Tigers.\n\nThe Blue Jays are better than the Tigers.\n\nThe Blue Jays are in good form.\n3. (5 points) Convert all rules to Conjunctive Normal Form (CNF). You do not need to restate rules that are already in CNF.\n4. (5 points) Carry out a resolution proof of the statement The Blue Jays are happy.",
+    "page_idx": 3,
+    "pdf_selected_len": 11
+  },
+  {
+    "version": "SuperNet-101",
+    "text": "\n\nConsider the following Mini Sodoku puzzle. (numbers are assigned values, letters are names for cells)\n\\begin{tabular}{|c|c|c|}\n\\hline A & B & $\\mathbf{1}$ \\\\\n\\hline C & $\\mathbf{2}$ & D \\\\\n\\hline E & F & G \\\\\n\\hline\n\\end{tabular}\n\nRecall the rules of Sudoku:\n- Each cell is assigned a number (in Mini Sudoku, the numbers are 1, 2, and 3).\n- No row can have the same number twice.\n- No column can have the same number twice.\n\nThese rules can be specified by constraints. You do not need to formally write these constraints down.\n5. (8 points) Carry out backtracking search. Explore the search space in the alphabetic order of the cell names, and assign values in numerical order (i.e., first assign 1, then 2, then 3). Draw the search tree. Stop and backtrack at leaves where constraints allow no valid variable assignment.",
+    "page_idx": 4,
+    "pdf_selected_len": 11
+  },
+  {
+    "version": "SuperNet-101",
+    "text": "\n6. (7 points) Now, use the minimum remaining values (MRV) heuristic. Fill in the following table. Start with a row that specifies the remaining possible values for each variable. Then commit one variable to a value following the MRV heuristic (in case of ties follow alphabetical order).\n\\begin{tabular}{|l|l|l|l|l|l|l|l|l|}\n\\hline Step & & A & B & C & D & E & F & G \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $1$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $2$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $3$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $4$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $5$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $6$ & assigned value & & & & & & & \\\\\n\\hline & remaining values & & & & & & & \\\\\n\\hline $7$ & assigned value & & & & & & & \\\\\n\\hline\n\\end{tabular}",
+    "page_idx": 5,
+    "pdf_selected_len": 11
+  },
+  {
+    "version": "SuperNet-101",
+    "text": "\n\nAn evil robot has almost completed his evil plan for the total destruction of the human race. He has two nasty chemicals called A and B which are currently stored in containers $1$ and $2$ respectively. All he has to do now is mix them together in container $3$. His designer, an equally evil computer scientist, has equipped the evil robot with a propositional planning system that allows him to reason about the locations of particular things and about moving a thing from one place to another.\n7. (5 points) Explain how this problem might be represented within a propositional planning system. Give specific examples of the way in which the start state and goal can be represented.\n8. (5 points) Describe in detail an algorithm that can be used to find a plan using this form of representation.\n9. (2 points) Give a specific example of a successor-state axiom using the representation you suggested.\n10. (3 points) Explain why in this particular planning problem it might be necessary to include one or more precondition axioms and give an example of such an axiom using your representation.",
+    "page_idx": 6,
+    "pdf_selected_len": 11
+  },
+  {
+    "version": "SuperNet-101",
+    "text": "\n\nConsider the following plot of data points.\n![](https://cdn.mathpix.com/cropped/2025_04_29_4e7077992474c7f2188dg-07.jpg?height=456&width=500&top_left_y=333&top_left_x=848)\n11. (5 points) Write down the formula for a linear classifier function $f(x, y) \\rightarrow$ value where positive output values correspond to the sign + and negative values correspond to the sign - . The classifier should classify all training examples corrrectly.",
+    "page_idx": 7,
+    "pdf_selected_len": 11
+  },
+  {
+    "version": "SuperNet-101",
+    "text": "\n\nNow consider the following plot of data points.\n![](https://cdn.mathpix.com/cropped/2025_04_29_4e7077992474c7f2188dg-08.jpg?height=457&width=476&top_left_y=227&top_left_x=857)\n12. (10 points) Draw a neural network with weight values that classifies all values correctly. You may use the following activation function.\n$$\\operatorname{threshold}(z)= \\begin{cases}1 & \\text { if } z \\geq 1 \\\\ -1 & \\text { else }\\end{cases}$$",
+    "page_idx": 8,
+    "pdf_selected_len": 11
+  },
+  {
+    "version": "SuperNet-101",
+    "text": "\n\nConsider the non-deterministic reinforcement environment drawn below. States are represented by circles, and actions by squares. The Probability of a transitions is indicated on the arc from actions to states. Immediate rewards are indicated above and below states. Once the agent reaches the end state the current episode ends.\n![](https://cdn.mathpix.com/cropped/2025_04_29_4e7077992474c7f2188dg-09.jpg?height=562&width=1191&top_left_y=437&top_left_x=491)\n13. (15 points) Consider two possible policies: always take action $\\mathbf{X}$ or always take action $\\mathbf{Y}$. For each policy, compute the answers to the following questions.\n(a) What paths could be taken?\n(b) What is each path's probability?\n(c) What is each path's reward?\n(d) What is the utility of each state?",
+    "page_idx": 9,
+    "pdf_selected_len": 11
+  },
+  {
+    "version": "SuperNet-101",
+    "text": "\n\nWe plan to build a database of which persons were hired at which company from the corpus of news paper articles.\nThe database table looks like follows:\n\\begin{tabular}{c|c|c} \nName & Position & Company \\\\\n\\hline Joe Johnson & sales representative & IBM \\\\\n\\hline Frida Feldman & lawyer & Microsoft \\\\\n\\hline$\\ldots$ & $\\ldots$ & $\\ldots$ \\\\\n\\hline\n\\end{tabular}\n\nConsider the following sentences\n- Albert Altman was hired by Apple as a software developer.\n- Booking.com hired Brianna Bayer as an accountant.\n- Comcast hired as their new CEO Catherine Carter.\n14. (3 points) For each sentence, write a string pattern matching expression that extracts the relevant information (use any pattern matching formalism you like).\n15. (3 points) Annotate each sentence with dependency relationships with appropriate labels.",
+    "page_idx": 10,
+    "pdf_selected_len": 11
+  },
+  {
+    "version": "SuperNet-101",
+    "text": "\n16. (5 points) Define informally a pattern over dependency structures that allows you to extract the relevant information from all the example sentences for the database table.\n17. (4 points) Hiring information may be expressed in many different ways in natural language. Below is a list of general problems in natural language processing. Give an example sentence that contains relevant hiring information for out database that demonstrates why each of these problems poses a challenge for our simple extraction patterns.\n- Synonymy\n- Hypernymy\n- Co-reference\n- Semantic inference",
+    "page_idx": 11,
+    "pdf_selected_len": 11
+  }
+]
